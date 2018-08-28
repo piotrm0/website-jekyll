@@ -1,0 +1,24 @@
+Currently:
+  "CMU ECE 18-734: Foundations of Privacy":
+     link: "<a href='https://www.archive.ece.cmu.edu/~ece734/'>Fall 2018</a>"
+  "Privacy and fairness for machine learning":
+     collabs: Anupam Datta, Matt Fredriskon, students Shayak Sen, Gihyuk Ko
+  "Transparency and interpretable machine learning":
+     collabs: Anupam Datta, students Sophia Kovalova, Raj Gupta
+  "Static analysis, abstract interpretation of java bytecode":
+     collabs: PLUM
+
+Recently:
+  "Privacy with origin":
+    collabs: Anupam Datta, Michael Tschantz, Sebastian Benthall, Helen Nissenbaum
+  "Quantitative information flow for dynamic data":
+    collabs: Mario Alvim, Michael Hicks, Michael Clarkson
+  "Game theoretic analysis of password authentication":
+    collabs: MHR Khouzani, Carlos Cid, Mudhakar Srivatsa
+  "Inference control":
+    collabs: Michael Hicks, Stephen Magill, Mudhakar Srivatsa, Jon Katz
+  "Abstract interpretation of probabilistic program semantics":
+    collabs: Michael Hicks, Stephen Magill
+  "Secure software development contest":
+    link: "<a href='http://builditbreakit.org/'>Builid It,Break It, Fix It</a>"
+    collabs: PLUM

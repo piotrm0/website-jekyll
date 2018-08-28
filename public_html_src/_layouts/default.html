@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Piotr (Peter) Mardziel">
+  <meta name="author" content="Piotr Mardziel">
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous"/>
+
+  <link rel="stylesheet"
+	href="style/style.css"/>
+
+  <link rel="icon" type="image/png" href="images/asl_logo.png"/>
+
+  <script type="text/javascript">
+  function toggleSummary() {
+    var simple = document.getElementById("simple");
+    var complex = document.getElementById("complex");
+    if (simple.style.display === "none") {
+      simple.style.display = "inline";
+      complex.style.display = "none";
+    } else {
+      simple.style.display = "none";
+      complex.style.display = "inline";
+    }
+  }
+  </script>
+
+  <title>Piotr (Peter) Mardziel</title>
+
+</head>
+<body>
+
+<nav class="navbar sticky-top navbar-dark navbar-expand mynav">
+
+  <span class="d-none d-md-block navbar-brand">Piotr (Peter) Mardziel</span>
+  <span class="d-none d-sm-block d-md-none navbar-brand">Piotr (Peter)</span>
+  <span class="d-block d-sm-none navbar-brand">Peter</span>
+
+  <button type="button" class="navbar-toggler"
+	  data-toggle="collapse"
+          data-target="#navbar"
+	  aria-controls="navbarSupportedContent"
+	  aria-label="Toggle navigation"
+          aria-expanded="false">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse"
+       id="navbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="d-none d-md-block nav-item">
+	<a href="index.html#about1"
+	   class="nav-link">
+	  About
+	</a>
+      </li>
+      <li class="d-block d-md-none nav-item">
+	<a href="index.html#about2"
+	   class="nav-link">
+	  About
+	</a>
+      </li>
+      <li class="nav-item">
+	<a href="index.html#currently"
+	   class="nav-link">
+	  Currently
+	</a>
+      </li>
+      <li class="nav-item">
+	<a href="index.html#recently"
+	   class="nav-link">
+	  Recently
+	</a>
+      </li>
+      <li class="nav-item">
+	<a href="index.html#service"
+	   class="nav-link">
+	  Service
+	</a>
+      </li>
+      <li class="nav-item">
+	<a href="index.html#papers"
+	   class="nav-link">
+	  Papers
+	</a>
+      </li>
+      <li class="nav-item">
+	<a href="index.html#talks"
+	   class="nav-link">
+	  Talks
+	</a>
+      </li>
+      <li class="nav-item">
+	<a href="index.html#tech-reports"
+	   class="nav-link">
+	  Tech-reports
+	</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+{{ content }}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+	integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	crossorigin="anonymous">
+</script>
+
+</body>
+</html>

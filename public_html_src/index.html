@@ -1,0 +1,206 @@
+---
+layout: default
+---
+
+
+<div class="container mt-3">
+<div class="row debug">
+<div class="col-12
+            col-sm-12
+            col-md-5
+            col-lg-4
+            col-xl-3">
+
+  <div class="row debug justify-content-center">
+
+    <div class="col-8 debug
+                col-sm-6
+                col-md-12
+                col-lg-12
+                col-xl-12">
+
+      <img class="huh rounded img-fluid mb-2" src="images/self_perplexed.jpeg"/><br/>
+      <img class="rounded img-fluid mb-2" src="images/science.jpeg"
+	   onclick="toggleSummary();"/>
+    </div>
+
+    <div class="col-12 debug
+                col-sm-6
+                col-md-12
+                col-lg-12
+                col-xl-12">
+    <h2 class="d-block d-md-none">Piotr (Peter) Mardziel</h2>
+
+      <div class="row debug">
+        <div class="col-6 col-sm-12 col-md-6">
+	  <span class="nobreak">CMU Silicon Valley</span><br/>
+	  Office: <span class="nobreak">B23 114</span><br/>
+          <a href="mailto:piotrm@gmail.com">piotrm@gmail.com</a><br/>
+          <a href="https://github.com/piotrm0"><span>piotrm0</span></a>
+          <span class="icon"><img src="images/icon_github.svg"/></span><br/>
+          <a href="https://bitbucket.org/piotrm"><span>piotrm</span></a>
+          <span class="icon"><img src="images/icon_bitbucket.svg"/></span><br/>
+          <a href="https://twitter.com/piotrm0"><span>piotrm0</span></a>
+          <span class="icon"><img src="images/icon_twitter.svg"/></span><br/>
+        </div>
+
+        <div class="debug col-6 col-sm-12 col-md-6">
+          <a href="http://fairlyaccountable.org">SPF@CMU</a><br/>
+          <a href="http://www.cmu.edu">CMU</a><br/>
+          <a href="http://www.ece.cmu.edu">CMU ECE</a><br/>
+          <a href="http://www.cylab.cmu.edu">CyLab</a><br/>
+          <a href="http://www.cs.umd.edu/projects/PL/">PLUM</a><br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="debug col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
+
+  <div class="row debug">
+
+    <div class="debug col-12">
+
+      <h2 class="d-none d-md-block"><a name="about1">Piotr (Peter) Mardziel</a></h2>
+      <h2 class="d-block d-md-none"><a name="about2">About me</a></h2>
+      <p>
+        I'm a system<b>s</b> scientist
+        at <a href="http://www.cmu.edu">CMU</a> <a href="http://www.ece.cmu.edu">ECE</a>
+        where
+	<span id="complex"> I work on transparency and accountability in machine learning with
+          applications to privacy and fairness.
+	</span>
+	<span id="simple"
+	      style="display: none; font-family: 'Comic Sans MS', cursive, sans-serif;">
+	  I work on making computers explain themselves. I want to make sure computers do not learn
+	  sad things from the sad world or remember things about us we would rather they not. This
+	  makes the world not as sad and computers not as bad. Woof woof.
+	</span>
+      </p>
+
+      <p>
+        Previously I was a PhD student and post-doc in the Programming Languages at University of
+        Maryland (<a href="http://www.cs.umd.edu/projects/PL/">PLUM</a>) group where I worked on
+        probabilistic programming with applications for privacy and quantitative information flow.
+      </p>
+    </div>
+
+    {%- for epoch in site.data.projects -%}
+    <div class="debug col-12">
+      <h2><a name="#{{ epoch[0] }}">{{ epoch[0] }}</h2>
+      <ul class="debug row">
+	{%- for project in epoch[1] -%}
+	<li class="col-12 col-xl-6">
+	  <b>{{ project[0] }}</b>{%- if project[1].link %}<br/>{{ project[1].link }}{%- endif -%}
+	  {%- if project[1].collabs -%}<br/>(with {{ project[1].collabs }}){%- endif -%}
+	</li>
+	{%- endfor -%}
+      </ul>
+    </div>
+    {%- endfor -%}
+
+    <div class="debug col-12">
+      <h2><a name="service">Service</a></h2>
+      <div class="row">
+      <div class="col-12 col-xl-6">
+      <h3>Committees</h3>
+      <ul class="row">
+        <li class="col-12"><a href="https://www.ieee-security.org/TC/SP2019/">2019 IEEE Symposium
+            on Privacy and Security (S&P/Oakland)</a></li>
+        <li class="col-12"><a href="http://plas2018.dcc.ufmg.br/">2018 ACM Workshop on Programming
+            Languages and Analysis of Security (PLAS)</a></li>
+        <li class="col-12"><a href="http://wpes.tech/">2018 Workshop on Privacy in Electronic
+            Society (WPES)</a></li>
+        <li class="col-12"><a href="https://fatconference.org/">(2018,2019) Conference on Fairness,
+            Accountability, and Transparency (FAT*)</a></li>
+        <li class="col-12">2016 Workshop on Foundations of Computer Security (FCS)</li>
+      </ul>
+      </div>
+      <div class="col-12 col-xl-6">
+      <h3>Reviewer</h3>
+      <ul class="row">
+        <li class="col-12"><b>Conferences</b>:
+          IEEE S&P<sub>(2015-2018)</sub>,
+          IEEE CSF<sub>(2013-2018)</sub>,
+          ACM CCS<sub>(2016-2017)</sub>,
+          ACM ASIACCS<sub>(2014)</sub>,
+          POPL<sub>(2013,2015)</sub>,
+          POST<sub>(2018)</sub>,
+          ICALP<sub>(2016)</sub>,
+          NDSS<sub>(2016-2017)</sub>
+        </li>
+        <li class="col-12"><b>Journals</b>:
+          Journal of Computer Security<sub>(~2017)</sub>,
+          Journal of Computer and System Sciences<sub>(~2015)</sub>,
+          Journal of Approximate Reasoning<sub>(~2017)</sub>,
+          Theoretical Computer Science<sub>(~2017)</sub>,
+          Logical Methods in Computer Science<sub>(~2017)</sub>
+        </li>
+        <li class="col-12"><b>Workshops/other</b>:
+          ACM AISec<sub>(2017)</sub>,
+          FATML<sub>(2016)</sub>,
+          DAT<sub>(2016)</sub>,
+          MILCOM<sub>(2016)</sub>
+        </li>
+      </ul>
+      </div>
+      <div class="col-12 col-xl-6">
+      <h3>Other service</h3>
+      <ul class="row">
+	<li class="col-12"><b>Panels</b>: NSF Panel<sub>(~2018)</sub></li>
+      </ul>
+      </div>
+      </div>
+    </div>
+
+    <!--
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+          <h2>topics</h2>
+          <TMPL_INCLUDE NAME="../build/pubs/topics.shtml"/>
+        </div>
+        -->
+
+    <div class="debug col-12">
+      <h2><a name="papers">Papers</a></h2>
+	<ol class="row">
+          <TMPL_INCLUDE NAME="../build/pubs/papers.shtml"/>
+	</ol>
+    </div>
+
+    <div class="debug col-12">
+      <h2><a name="talks">Talks</a></h2>
+      <ol class="row">
+	<TMPL_LOOP NAME="data_talks">
+	  <li class="debug col-12 col-xl-6">
+	    <!--div class="icon">
+	      <a href="<TMPL_VAR NAME="url"/>">
+                <span class="bigicon"><img src="<TMPL_VAR NAME="icon"/>"/></span>
+	      </a>
+	    </div-->
+	    <div class="debug">
+	      <div>
+                <a href="<TMPL_VAR NAME="url"/>">
+		  <TMPL_VAR NAME="title"/>
+		</a>
+	      </div>
+	      <div>
+		<TMPL_VAR NAME="presented"/>
+	      </div>
+	    </div>
+	  </li>
+	</TMPL_LOOP>
+      </ol>
+    </div>
+
+    <div class="debug col-12">
+      <h2><a name="tech-reports">Tech-reports</a></h2>
+      <ol class="row debug">
+        <TMPL_INCLUDE NAME="../build/pubs/tech-reports.shtml"/>
+      </ol>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>

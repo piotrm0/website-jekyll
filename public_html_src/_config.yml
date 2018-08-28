@@ -1,0 +1,28 @@
+source: .
+destination: ../public_html
+layouts_dir: _layouts
+data_dir: _data
+
+baseurl: "/"
+url: "https://piotr.mardziel.com"
+
+# Build settings
+markdown: kramdown
+
+#plugins:
+#  - ...
+
+timezone: US/Pacific
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Makefile
+  - assets
+  - Gemfile
+  - Gemfile.lock
+
+
+sass:
+  style: :compressed

@@ -1,0 +1,90 @@
+---
+---
+
+/* cmu colors */
+/* primary */
+$color-red: rgb(166, 25, 46);
+$color-black: rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+$color-gray-light: rgb(191, 191, 191);
+$color-gray-dark: rgb(77, 77, 77);
+
+/* secondary */
+/*$color-green: rgb(0, 132, 61);*/
+$color-yellow: rgb(242, 169, 0);
+/*$color-blue: rgb(0, 45, 114);*/
+
+/* web primary */
+$color-cmu-red: rgb(187, 0, 0);
+$color-gray: rgb(244, 244, 244);
+$color-dark-gray: rgb(102, 102, 102);
+
+/* web secondary */
+$color-gold: rgb(170, 102, 0);
+$color-teal: rgb(0, 102, 119);
+$color-blue: rgb(34, 68, 119);
+$color-green: rgb(0, 136, 85);
+$color-dark-green: rgb(34, 68, 51);
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: $color-green;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: $color-blue;
+}
+
+.location {
+    padding: 1ex;
+    background-color: $color-gray;
+    margin-bottom: 1ex;
+}
+
+.mynav {
+    background-color: $color-dark-green;
+    border-bottom: 1ex solid $color-green;
+}
+
+.small-bar {
+    border-bottom: 0.25ex solid $color-cmu-red;
+    width: 100%;
+}
+
+h1 {
+    border-bottom: 0.8ex solid $color-cmu-red;
+}
+
+h2 {
+    border-bottom: 0.6ex solid $color-cmu-red;
+}
+
+h3 {
+    border-bottom: 0.4ex solid $color-cmu-red;
+}
+
+h4 {
+    border-bottom: 0.2ex solid $color-cmu-red;
+}
+
+hr {
+    margin: 1ex;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.debug {
+    border: 0px solid black;
+}
+
+.icon > svg, .icon img {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
