@@ -1,0 +1,92 @@
+JCSS:
+  long: Journal of Computer and System Sciences
+  url: https://www.sciencedirect.com/journal/journal-of-computer-and-system-sciences
+  type: journal
+JCS:
+  long: Journal of Computer Security
+  url: http://jcs.stanford.edu
+  type: journal
+IJA:
+  long: International Journal of Approximate Reasoning
+  url: https://www.journals.elsevier.com/international-journal-of-approximate-reasoning
+  type: journal
+TCS:
+  long: Theoretical Computer Science
+  url: https://www.journals.elsevier.com/theoretical-computer-science
+  type: journal
+LMCS:
+  long: Logical Methods in Computer Science
+  url: https://lmcs.episciences.org
+  type: journal
+
+S&P/Oakland:
+  long: Symposium on Security and Privacy
+  org: IEEE
+  type: conference
+FAT*:
+  long: Conference on Fairness, Accountability, and Transparency
+  type: conference
+CSF:
+  long: Computer Security Foundations Symposium
+  org: IEEE
+  type: conference
+CCS:
+  long: Conference on Computer & Communications Security
+  org: ACM
+  type: conference
+ASIACCS:
+  long: ASIA Conference on Computer & Communications Security
+  org: ACM
+  type: conference
+POPL:
+  long: Symposium on Principles of Programming Languages
+  org: ACM
+  type: conference
+POST:
+  long: International Conference on Principles of Security and Trust
+  org: ETAPS
+  type: conference
+ICALP:
+  long: International Colloquium on Automata, Languages, and Programming
+  org: EATCS
+  type: conference
+NDSS:
+  long: Network and Distributed System Security Symposium
+  type: conference
+ESOP:
+  long: European Symposium on Programming
+  org: ETAPS
+  type: conference
+
+PLAS:
+  long: Workshop on Programming Languages and Analysis of Security
+  org: ACM
+  type: workshop
+WPES:
+  long: Workshop on Privacy in Electronic Society
+  type: workshop
+FCS:
+  long: Workshop on Foundations of Computer Security
+  type: workshop
+AISec:
+  long: Workshop on Artificial Intelligence and Security
+  org: ACM
+  type: workshop
+FATML:
+  long: Workshop on Fairness, Accountability, and Transparency in Machine Learning
+  type: workshop
+DAT:
+  long: Workshop on Data and Algorithmic Transparency
+  type: workshop
+MILCOM:
+  long: International Conference for Military Communications
+  type: workshop
+CSET:
+  long: Workshop on Cyber Security Experimentation and Test
+  org: USENIX
+  type: workshop
+
+NSF:
+  long: National Science Foundation Panel
+  url: https://www.nsf.org
+  type: panel

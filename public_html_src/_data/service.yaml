@@ -1,0 +1,74 @@
+Committees:
+  S&P/Oakland:
+    url: https://www.ieee-security.org/TC/SP2019/
+    years: 2019
+
+  PLAS:
+    url: https://plas2018.dcc.ufmg.br
+    years: 2018
+
+  WPES:
+    url: https://wpes.tech
+    years: 2018
+
+  FAT*:
+    url: https://fatconference.org
+    years: 2018, 2019
+
+  FCS:
+    url: https://people.mpi-sws.org/~dg/events/fcs2016
+    years: 2016
+
+Reviewer:
+  S&P/Oakland:
+    url: https://www.ieee-security.org/TC/SP2018
+    years: 2015-2018
+  CSF:
+    url: https://www.cs.ox.ac.uk/conferences/csf2018
+    years: 2013-2018
+  CCS:
+    url: https://ccs2017.sigsac.org
+    years: 2016-2017
+  ASIACCS:
+    url: http://asiaccs2014.nict.go.jp
+    years: 2014
+  POPL:
+    url: https://popl.mpi-sws.org/2015
+    years: 2013, 2015
+  POST:
+    url: https://www.etaps.org/index.php/2018/post
+    years: 2018
+  ICALP:
+    url: http://www.easyconferences.eu/icalp2016
+    years: 2016
+  NDSS:
+    url: http://www.ndss-symposium.org/ndss2017
+    years: 2016-2017
+
+  JCS:
+    years: ~2017
+  JCSS:
+    years: ~2015
+  IJA:
+    years: ~2017
+  TCS:
+    years: ~2017
+  LMCS:
+    years: ~2017
+
+  AISec:
+    url: http://aisec2018.icsi.berkeley.edu/aisec2018/
+    years: 2017
+  FATML:
+    url: https://www.fatml.org/schedule/2016
+    years: 2016
+  DAT:
+    url: http://datworkshop.org
+    years: 2016
+  MILCOM:
+    url: http://events.afcea.org/milcom16/public/enter.aspx
+    years: 2016
+
+Other service:
+  NSF:
+    years: ~2018

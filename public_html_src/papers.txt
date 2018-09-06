@@ -1,0 +1,25 @@
+---
+layout: blank
+---
+
+
+{%- for paper_dict in site.data.papers -%}
+{%- assign ref = paper_dict[0] -%}
+{%- assign paper = paper_dict[1] -%}
+{%- assign venue_short = paper.venue -%}
+{%- assign venue = site.data.venues[venue_short] -%}
+
+{{ paper.title }}
+{{ paper.year }} {% if venue.long -%}{{ venue.long }} ({{ venue_short }})
+{%- else -%}
+{{ venue_short }}
+{%- endif -%}.
+{{- "" }}
+{{- "" }}
+{% for author_name in paper.authors -%}
+{%- assign author = site.data.authors[author_name] -%}
+{{ author_name }}{% if forloop.last -%}{%- else -%}, {% endif -%}
+{%- endfor %}
+{{ paper.pdf }}
+
+{% endfor -%}

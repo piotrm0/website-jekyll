@@ -36,12 +36,15 @@ layout: default
 	  <span class="nobreak">CMU Silicon Valley</span><br/>
 	  Office: <span class="nobreak">B23 114</span><br/>
           <a href="mailto:piotrm@gmail.com">piotrm@gmail.com</a><br/>
-          <a href="https://github.com/piotrm0"><span>piotrm0</span></a>
-          <span class="icon"><img src="images/icon_github.svg"/></span><br/>
-          <a href="https://bitbucket.org/piotrm"><span>piotrm</span></a>
-          <span class="icon"><img src="images/icon_bitbucket.svg"/></span><br/>
-          <a href="https://twitter.com/piotrm0"><span>piotrm0</span></a>
-          <span class="icon"><img src="images/icon_twitter.svg"/></span><br/>
+
+          <span class="icon"><img src="images/icon_github.svg"/></span>
+	  <a href="https://github.com/piotrm0"><span>piotrm0</span></a><br/>
+
+	  <span class="icon"><img src="images/icon_bitbucket.svg"/></span>
+          <a href="https://bitbucket.org/piotrm"><span>piotrm</span></a><br/>
+
+          <span class="icon"><img src="images/icon_twitter.svg"/></span>
+	  <a href="https://twitter.com/piotrm0"><span>piotrm0</span></a><br/>
         </div>
 
         <div class="debug col-6 col-sm-12 col-md-6">
@@ -58,7 +61,7 @@ layout: default
 
 <div class="debug col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
 
-  <div class="row debug">
+  <div class="debug row">
 
     <div class="debug col-12">
 
@@ -88,69 +91,61 @@ layout: default
 
     {%- for epoch in site.data.projects -%}
     <div class="debug col-12">
-      <h2><a name="#{{ epoch[0] }}">{{ epoch[0] }}</h2>
+      <h2><a name="{{ epoch[0] }}">{{ epoch[0] }}</a></h2>
       <ul class="debug row">
-	{%- for project in epoch[1] -%}
-	<li class="col-12 col-xl-6">
-	  <b>{{ project[0] }}</b>{%- if project[1].link %}<br/>{{ project[1].link }}{%- endif -%}
-	  {%- if project[1].collabs -%}<br/>(with {{ project[1].collabs }}){%- endif -%}
+	{% for project_dict in epoch[1] %}
+	{% assign project_name = project_dict[0] %}
+	{% assign project = project_dict[1] %}
+	<li class="debug col-12 col-xl-6 pr-5 pl-1 mb-2">
+	  {{ project_name }}
+	  {% if project.link_url %}
+	  <br/><a href="{{ project.link_url }}">{{ project.link_name }}</a>
+	  {% else %}
+	  <a href=""></a>
+	  {% endif %}
+	    {% if project.collabs %}
+	    <br/><small>with {{ project.collabs }}</small>
+	  {% endif %}
 	</li>
-	{%- endfor -%}
+	{% endfor %}
       </ul>
     </div>
     {%- endfor -%}
 
     <div class="debug col-12">
       <h2><a name="service">Service</a></h2>
-      <div class="row">
-      <div class="col-12 col-xl-6">
-      <h3>Committees</h3>
-      <ul class="row">
-        <li class="col-12"><a href="https://www.ieee-security.org/TC/SP2019/">2019 IEEE Symposium
-            on Privacy and Security (S&P/Oakland)</a></li>
-        <li class="col-12"><a href="http://plas2018.dcc.ufmg.br/">2018 ACM Workshop on Programming
-            Languages and Analysis of Security (PLAS)</a></li>
-        <li class="col-12"><a href="http://wpes.tech/">2018 Workshop on Privacy in Electronic
-            Society (WPES)</a></li>
-        <li class="col-12"><a href="https://fatconference.org/">(2018,2019) Conference on Fairness,
-            Accountability, and Transparency (FAT*)</a></li>
-        <li class="col-12">2016 Workshop on Foundations of Computer Security (FCS)</li>
-      </ul>
-      </div>
-      <div class="col-12 col-xl-6">
-      <h3>Reviewer</h3>
-      <ul class="row">
-        <li class="col-12"><b>Conferences</b>:
-          IEEE S&P<sub>(2015-2018)</sub>,
-          IEEE CSF<sub>(2013-2018)</sub>,
-          ACM CCS<sub>(2016-2017)</sub>,
-          ACM ASIACCS<sub>(2014)</sub>,
-          POPL<sub>(2013,2015)</sub>,
-          POST<sub>(2018)</sub>,
-          ICALP<sub>(2016)</sub>,
-          NDSS<sub>(2016-2017)</sub>
-        </li>
-        <li class="col-12"><b>Journals</b>:
-          Journal of Computer Security<sub>(~2017)</sub>,
-          Journal of Computer and System Sciences<sub>(~2015)</sub>,
-          Journal of Approximate Reasoning<sub>(~2017)</sub>,
-          Theoretical Computer Science<sub>(~2017)</sub>,
-          Logical Methods in Computer Science<sub>(~2017)</sub>
-        </li>
-        <li class="col-12"><b>Workshops/other</b>:
-          ACM AISec<sub>(2017)</sub>,
-          FATML<sub>(2016)</sub>,
-          DAT<sub>(2016)</sub>,
-          MILCOM<sub>(2016)</sub>
-        </li>
-      </ul>
-      </div>
-      <div class="col-12 col-xl-6">
-      <h3>Other service</h3>
-      <ul class="row">
-	<li class="col-12"><b>Panels</b>: NSF Panel<sub>(~2018)</sub></li>
-      </ul>
-      </div>
+      <div class="debug row">
+
+	{%- for dict in site.data.service -%}
+	{%- assign type = dict[0] -%}
+	{%- assign items = dict[1] -%}
+
+	<div class="debug col-12">
+	  <h3>{{ type }}</h3>
+	  <ul class="debug row">
+	    {%- for item_dict in items -%}
+	    {%- assign short = item_dict[0] -%}
+	    {%- assign item = item_dict[1] -%}
+	    {%- assign venue = site.data.venues[short] -%}
+	    <li class="debug col-12 col-xl-6 pl-1 pr-5 mb-2">
+	      {{ venue.org }}
+
+	      {% if item.url -%}
+	      <a href="{{ item.url }}">{{ venue.long }}</a>
+	      {%- else -%}
+	      <a href="{{ vnue.url }}">{{ venue.long }}</a>
+	      {%- endif %}
+
+	      ({{ short }})
+
+              <small>{{ item.years }}</small>
+
+	    </li>
+	    {%- endfor -%}
+	  </ul>
+	</div>
+	{%- endfor -%}
+
       </div>
     </div>
 
@@ -163,42 +158,58 @@ layout: default
 
     <div class="debug col-12">
       <h2><a name="papers">Papers</a></h2>
-	<ol class="row">
-          <TMPL_INCLUDE NAME="../build/pubs/papers.shtml"/>
-	</ol>
+
+      <ul class="debug row">
+	{%- for paper_dict in site.data.papers -%}
+	{%- assign ref = paper_dict[0] -%}
+	{%- assign paper = paper_dict[1] -%}
+	{%- assign venue_short = paper.venue -%}
+	{%- assign venue = site.data.venues[venue_short] -%}
+
+	<li class="debug col-12 col-xl-6 pl-1 pr-5 mb-2">
+	  <a href="{{ paper.pdf }}"><span class="icon-item"><img src="images/icon_pdf.png"/></span></a>
+	  <a href="{{ paper.pdf }}">{{ paper.title }}</a>.<br/>
+	  <small>
+	    {%- if venue.long -%}
+	    {{ venue.long }} ({{ venue_short }})
+	    {%- else -%}
+	    {{ venue_short }}
+	    {%- endif -%}
+	  </small>.
+
+	  <small>{{ paper.year }}</small>.<br/>
+
+	  <small>
+	    {%- for author_name in paper.authors -%}
+	    {% assign author = site.data.authors[author_name] %}
+	    <a href="{{ author.url }}">{{ author_name }}</a>{% if forloop.last %}{% else %}, {% endif %}
+	    {% endfor %}
+	  </small>
+
+	</li>
+	{%- endfor -%}
+      </ul>
     </div>
 
     <div class="debug col-12">
       <h2><a name="talks">Talks</a></h2>
-      <ol class="row">
-	<TMPL_LOOP NAME="data_talks">
-	  <li class="debug col-12 col-xl-6">
-	    <!--div class="icon">
-	      <a href="<TMPL_VAR NAME="url"/>">
-                <span class="bigicon"><img src="<TMPL_VAR NAME="icon"/>"/></span>
-	      </a>
-	    </div-->
-	    <div class="debug">
-	      <div>
-                <a href="<TMPL_VAR NAME="url"/>">
-		  <TMPL_VAR NAME="title"/>
-		</a>
-	      </div>
-	      <div>
-		<TMPL_VAR NAME="presented"/>
-	      </div>
-	    </div>
-	  </li>
-	</TMPL_LOOP>
-      </ol>
+      <ul class="debug row">
+	{%- for talk in site.data.talks -%}
+	<li class="debug col-12 col-xl-6 pl-1 pr-5 mb-2">
+	  <div>
+	    <a href="{{ talk.url }}"><span class="icon-item"><img src="{{ talk.icon }}"/></span></a>
+            <a href="{{ talk.url }}">{{ talk.title }}</a>
+	  </div>
+	  <ul class="col">
+	    {%- for place in talk.presented -%}
+	    <li><small>{{ place.where }} {{ place.when }}</small></li>
+	    {%- endfor -%}
+	  </ul>
+	</li>
+	{%- endfor -%}
+      </ul>
     </div>
 
-    <div class="debug col-12">
-      <h2><a name="tech-reports">Tech-reports</a></h2>
-      <ol class="row debug">
-        <TMPL_INCLUDE NAME="../build/pubs/tech-reports.shtml"/>
-      </ol>
-    </div>
   </div>
 </div>
 

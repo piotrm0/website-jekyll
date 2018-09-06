@@ -78,13 +78,41 @@ hr {
     white-space: nowrap;
 }
 
+.icon {
+    svg, img {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+    }
+}
+
+.icon-item {
+    margin-left: -2.2em;
+    svg, img {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+    }
+}
+
 .debug {
     border: 0px solid black;
 }
 
-.icon > svg, .icon img {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
+.huh:hover{
+    transition: 180s;
+    transition-timing-function: ease-in-out;
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+}
+
+.huh:not(:hover) {
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(0.0, 1.6, 0.9, 1.0);
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
 }

@@ -1,0 +1,65 @@
+- url: docs/mardziel15hcss.pres.pptx
+  icon: images/icon_ppt.svg
+  title: "Models and Games for Quantifying Vulnerability of Secret Information"
+  presented:
+    - where: Conference on Hight Confidence Software and Systems (HCSS)
+      when: 2015
+
+- url: docs/mardziel15dagstuhl.pres.pptx
+  icon: images/icon_ppt.svg
+  title: "Probabilistic Programming for Security"
+  presented:
+    - where: Dagstuhl Seminar on Challenges and Trends in Probabilistic Programming
+      when: 2015
+
+- url: docs/mardziel15thesis.latest-pres.pptx
+  icon: images/icon_ppt.svg
+  title: "Modeling, Measuring, and Limiting Adversary Knowledge"
+  presented:
+    - where: Galois
+      when: March 2017
+    - where: Microsoft Research, Cambridge UK
+      when: February 2015
+    - where: Applied Logic and Security Group at Worcester Polytechnic Institute
+      when: January 2015
+
+- url: docs/mardziel14loss.pres.pdf
+  icon: images/icon_pdf.svg
+  title: "Adversary Gain vs. Defender Loss in Quantified Information Flow"
+  presented:
+    - where: Workshop on Foundations of Computer Security (FCS), Vienna Austria
+      when: 2014
+
+- url: docs/mardziel14time.pres.pdf
+  icon: images/icon_pdf.svg
+  title: "Quantifying Information Flow for Dynamic Secrets"
+  presented:
+    - where: IEEE Symposium on Security & Privacy (S&P), San Jose, CA
+      when: 2014
+    - where: meeting of the International Technology Alliance, Cardiff, UK
+      when: 2014
+
+- url: docs/mardziel12probabilistic.pres.pptx
+  icon: images/icon_ppt.svg
+  title: "Probabilistic Computation for Information Security"
+  presented:
+    - where: NIPS Workshop on Probabilistic Programming, Lake Tahoe, NV
+      when: 2012
+
+- url: docs/mardziel12smc.pres.pptx
+  icon: images/icon_ppt.svg
+  title: "Knowledge-Oriented Secure Multiparty Computation"
+  presented:
+    - where: Workshop on Programming Languages and Analysis for Security (PLAS)
+      when: 2012
+
+- url: docs/mardziel11dynamic.pres.pptx
+  icon: images/icon_ppt.svg
+  title: "Dynamic Enforcement of Knowledge-based Security Policies using Probabilistic Abstract Interpretation"
+  presented:
+    - where: Symposium on Computer Security Foundations (CSF), Paris, France
+      when: 2011
+    - where: NJ Programming Languages and Systems Seminar (NJPLS), Princeton, NJ
+      when: April 2011
+    - where: George Washington University Computer Security Seminar
+      when: 2011
