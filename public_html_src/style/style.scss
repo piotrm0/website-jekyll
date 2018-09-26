@@ -116,3 +116,17 @@ hr {
     -ms-transform:rotate(0deg);
     -webkit-transform:rotate(0deg);
 }
+
+.keywords {
+    li,ul {
+	margin-left: 0ex;
+    }
+    li {
+	font-size: 1.0em;
+
+    }
+    span {
+	white-space: nowrap;
+    }
+
+}
