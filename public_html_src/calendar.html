@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row p-3">
+    <div class="col-12">
+
+      Piotr's calendar:
+      <a href="javascript: loadCalendar(null);">Local<span id="localtimezone"></span></a>,
+      <a href="javascript: loadCalendar('America/Los_Angeles');">Pacific</a>,
+      <a href="javascript: loadCalendar('America/New_York');">Eastern</a>
+      <br/><br/>
+
+      <form action="https://calendar.google.com/calendar/embed" target="calendar" method="get" name="calendarParameters">
+	<input hidden type="text" name="showTitle"     value="0"/>
+	<input hidden type="text" name="showDate"      value="1"/>
+	<input hidden type="text" name="showPrint"     value="1"/>
+	<input hidden type="text" name="showTabs"      value="1"/>
+	<input hidden type="text" name="showCalendars" value="1"/>
+	<input hidden type="text" name="mode"          value="WEEK"/>
+	<!--input hidden type="text" name="height"        value="600"/-->
+	<input hidden type="text" name="wkst"    value="1"/>
+	<input hidden type="text" name="bgcolor" value="#FFFFFF"/>
+	<input hidden type="text" name="src"     value="qcj3cfubjbt4knqbidvns4vltc@group.calendar.google.com"/>
+	<input hidden type="text" name="color"   value="#711616"/>
+	<input hidden type="text" name="src"     value="qbpsv0tav5v54c9gv8vkctj100@group.calendar.google.com"/>
+	<input hidden type="text" name="color"   value="#853104"/>
+	<input hidden type="text" name="ctz"     value="America/Los_Angeles"/>
+      </form>
+
+      <iframe name="calendar"
+	      style="min-height: 25em; max-height: 40em; height: 100vh;"
+	      width="100%"
+	      frameborder="0"
+	      scrolling="no"></iframe>
+
+      <script src="js/jstz.js"/></script>
+
+      <script type="text/javascript">
+	var local_timezone = jstz.determine();
+
+	document.getElementById('localtimezone').innerHTML = "(" + local_timezone.name() + ")";
+
+	function loadCalendar(timezone) {
+	  if (null == timezone) {
+	     timezone = local_timezone.name();
+	  }
+	  var form = document.forms['calendarParameters'];
+	  form['ctz'].value=timezone;
+	  form.submit();
+	}
+	window.onload = function() {
+	    loadCalendar(null);
+	}
+      </script>
+
+    </div>
+  </div>
+</div>
