@@ -26,6 +26,10 @@ $color-blue: rgb(34, 68, 119);
 $color-green: rgb(0, 136, 85);
 $color-dark-green: rgb(34, 68, 51);
 
+.keywords small {
+    color: $color-gray-light;
+}
+
 body, html {
     height: 100%;
 }
@@ -136,5 +140,4 @@ hr {
     span {
 	white-space: nowrap;
     }
-
 }
