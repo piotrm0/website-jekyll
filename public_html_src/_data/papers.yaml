@@ -1,213 +1,282 @@
-wei2018evaluating:
-  title: "Evaluating Design Tradeoffs in Numeric Static Analysis for Java"
-  venue: ESOP
-  year: 2018
-  pdf: http://www.cs.umd.edu/~mwh/papers/eval-analysis-submit.pdf
-  authors:
-    - Shiyi Wei
-    - Piotr Mardziel
-    - Andrew Ruef
-    - Jeffrey S. Foster
-    - Michael Hicks
+Papers:
+  wei2018evaluating:
+    title: "Evaluating Design Tradeoffs in Numeric Static Analysis for Java"
+    venue: ESOP
+    year: 2018
+    pdf: http://www.cs.umd.edu/~mwh/papers/eval-analysis-submit.pdf
+    authors:
+      - Shiyi Wei
+      - Piotr Mardziel
+      - Andrew Ruef
+      - Jeffrey S. Foster
+      - Michael Hicks
 
-alvim2017quantifyingTR:
-  title: "Quantifying vulnerability of secret generation using hyper-distributions (extended version)"
-  venue: arXiv
-  year: January 2017
-  pdf: http://arxiv.org/pdf/1701.04174.pdf
-  authors:
-    - Mario Alvim
-    - Piotr Mardziel
-    - Michael Hicks
+  alvim2017quantifying:
+    title: "Quantifying vulnerability of secret generation using hyper-distributions"
+    venue: POST
+    year: 2017
+    pdf: http://homepages.dcc.ufmg.br/~msalvim/publications/2017-POST.pdf
+    authors:
+      - Mario Alvim
+      - Piotr Mardziel
+      - Michael Hicks
 
-datta2017discriminationTR:
-  title: "Proxy Non-Discrimination in Data-Driven Systems"
-  venue: arXiv
-  year: July 2017
-  pdf: http://arxiv.org/pdf/1707.08120.pdf
-  authors:
-    - Anupam Datta
-    - Matthew Fredrikson
-    - Gihyuk Ko
-    - Piotr Mardziel
-    - Shayak Sen
+  datta2017useprivacy:
+    title: "Use Privacy in Data-Driven Systems: Theory and Experiments with Machine Learnt Programs"
+    venue: CCS
+    year: 2017
+    pdf: http://arxiv.org/pdf/1705.07807.pdf
+    authors:
+      - Anupam Datta
+      - Matthew Fredrikson
+      - Gihyuk Ko
+      - Piotr Mardziel
+      - Shayak Sen
 
-alvim2017quantifying:
-  title: "Quantifying vulnerability of secret generation using hyper-distributions"
-  venue: POST
-  year: 2017
-  pdf: http://homepages.dcc.ufmg.br/~msalvim/publications/2017-POST.pdf
-  authors:
-    - Mario Alvim
-    - Piotr Mardziel
-    - Michael Hicks
+  ruef2016bibifi:
+    title: "Build It, Break It, Fix It: Contesting Secure Development"
+    venue: CCS
+    year: 2016
+    pdf: http://cs.umd.edu/~dml/papers/bibifi_ccs16.pdf
+    authors:
+      - Andrew Ruef
+      - Michael Hicks
+      - James Parker
+      - Dave Levin
+      - Michelle Mazurek
+      - Piotr Mardziel
 
-datta2017useprivacyTR:
-  title: "Use Privacy in Data-Driven Systems: Theory and Experiments with Machine Learnt Programs (extended version)"
-  venue: arXiv
-  year: July 2017
-  pdf: http://arxiv.org/pdf/1705.07807.pdf
-  authors:
-    - Anupam Datta
-    - Matthew Fredrikson
-    - Gihyuk Ko
-    - Piotr Mardziel
-    - Shayak Sen
+  alvim16strategy:
+    title: "Towards the Quantification of Strategy Leakage"
+    venue: FCS
+    year: 2016
+    pdf: http://www.cs.umd.edu/~mwh/papers/stratquant.pdf
+    authors:
+      - Mario Alvim
+      - Piotr Mardziel
+      - Michael Hicks
 
-datta2017useprivacy:
-  title: "Use Privacy in Data-Driven Systems: Theory and Experiments with Machine Learnt Programs"
-  venue: CCS
-  year: 2017
-  pdf: http://arxiv.org/pdf/1705.07807.pdf
-  authors:
-    - Anupam Datta
-    - Matthew Fredrikson
-    - Gihyuk Ko
-    - Piotr Mardziel
-    - Shayak Sen
+  khouzani15picking:
+    title: "Picking vs. Guessing Secrets: A Game-Theoretic Analysis"
+    venue: CSF
+    year: 2015
+    pdf: docs/khouzani15picking.paper.pdf
+    authors:
+      - MHR Khouzani
+      - Piotr Mardziel
+      - Carlos Cid
+      - Mudhakar Srivatsa
 
-ruef2016bibifi:
-  title: "Build It, Break It, Fix It: Contesting Secure Development"
-  venue: CCS
-  year: 2016
-  pdf: http://cs.umd.edu/~dml/papers/bibifi_ccs16.pdf
-  authors:
-    - Andrew Ruef
-    - Michael Hicks
-    - James Parker
-    - Dave Levin
-    - Michelle Mazurek
-    - Piotr Mardziel
+  ruef15bibifi:
+    title: "Build It Break It: Measuring and Comparing Development Security"
+    venue: CSET
+    year: 2015
+    pdf: http://www.cs.umd.edu/~mwh/papers/bibifi-cset15.pdf
+    authors:
+      - Andrew Ruef
+      - Michael Hicks
+      - James Parker
+      - Dave Levin
+      - Atif Memon
+      - Jandelyn Plane
+      - Piotr Mardziel
 
-alvim16strategy:
-  title: "Towards the Quantification of Strategy Leakage"
-  venue: FCS
-  year: 2016
-  pdf: http://www.cs.umd.edu/~mwh/papers/stratquant.pdf
-  authors:
-    - Mario Alvim
-    - Piotr Mardziel
-    - Michael Hicks
+  mardziel14time:
+    title: "Quantifying Information Flow for Dynamic Secrets"
+    venue: S&P/Oakland
+    year: 2014
+    pdf: http://www.cs.umd.edu/~mwh/papers/qif-dynamic-secrets.pdf
+    authors:
+      - Piotr Mardziel
+      - Mario Alvim
+      - Michael Hicks
+      - Michael R. Clarkson
 
-khouzani15pickingTR:
-  title: "Picking vs. Guessing Secrets: A Game-Theoretic Analysis (extended version)"
-  venue: arXiv
-  year: May 2015
-  pdf: http://arxiv.org/pdf/1505.02325.pdf
-  authors:
-    - MHR Khouzani
-    - Piotr Mardziel
-    - Carlos Cid
-    - Mudhakar Srivatsa
+  mardziel14timefcs:
+    title: "Adversary Gain vs. Defender Loss in Quantified Information Flow"
+    venue: FCS
+    year: 2014
+    pdf: http://www.cs.umd.edu/~mwh/papers/qifgl.pdf
+    authors:
+      - Piotr Mardziel
+      - Mario Alvim
+      - Michael Hicks
 
-khouzani15picking:
-  title: "Picking vs. Guessing Secrets: A Game-Theoretic Analysis"
-  venue: CSF
-  year: 2015
-  pdf: docs/khouzani15picking.paper.pdf
-  authors:
-    - MHR Khouzani
-    - Piotr Mardziel
-    - Carlos Cid
-    - Mudhakar Srivatsa
+  mardziel13beliefJCS:
+    title: "Dynamic Enforcement of Knowledge-based Security Policies using Probabilistic Abstract Interpretation"
+    venue: JCS
+    year: 2013
+    pdf: http://www.cs.umd.edu/~mwh/papers/beliefpol-extended.pdf
+    authors:
+      - Piotr Mardziel
+      - Stephen Magill
+      - Michael Hicks
+      - Mudhakar Srivatsa
 
-ruef15bibifi:
-  title: "Build It Break It: Measuring and Comparing Development Security"
-  venue: CSET
-  year: 2015
-  pdf: http://www.cs.umd.edu/~mwh/papers/bibifi-cset15.pdf
-  authors:
-    - Andrew Ruef
-    - Michael Hicks
-    - James Parker
-    - Dave Levin
-    - Atif Memon
-    - Jandelyn Plane
-    - Piotr Mardziel
+  rastogi13knowledge:
+    title: "Knowledge Inference for Optimizing Secure Multi-party Computation"
+    venue: PLAS
+    year: 2013
+    pdf: http://www.cs.umd.edu/~mwh/papers/smc-knowledge.pdf
+    authors:
+      - Aseem Rastogi
+      - Piotr Mardziel
+      - Matthew Hammer
+      - Michael Hicks
 
-mardziel14timeTR:
-  title: "Quantifying Information Flow for Dynamic Secrets (extended version)"
-  venue: TR-UMD
-  year: May 2014
-  pdf: http://www.cs.umd.edu/~mwh/papers/qif-dynamic-secrets-tr.pdf
-  authors:
-    - Piotr Mardziel
-    - Mario Alvim
-    - Michael Hicks
-    - Michael R. Clarkson
+  mardziel12beliefsmc:
+    title: "Knowledge-Oriented Secure Multiparty Computation"
+    venue: PLAS
+    year: 2012
+    pdf: http://www.cs.umd.edu/~mwh/papers/belief-smc.pdf
+    authors:
+      - Piotr Mardziel
+      - Michael Hicks
+      - Jonathan Katz
+      - Mudhakar Srivatsa
 
-mardziel14time:
-  title: "Quantifying Information Flow for Dynamic Secrets"
-  venue: S&P/Oakland
-  year: 2014
-  pdf: http://www.cs.umd.edu/~mwh/papers/qif-dynamic-secrets.pdf
-  authors:
-    - Piotr Mardziel
-    - Mario Alvim
-    - Michael Hicks
-    - Michael R. Clarkson
+  mardziel11belief:
+    title: Dynamic Enforcement of Knowledge-based Security Policies
+    venue: CSF
+    year: 2011
+    pdf: http://www.cs.umd.edu/~mwh/papers/beliefpol.pdf
+    authors:
+      - Piotr Mardziel
+      - Stephen Magill
+      - Michael Hicks
+      - Mudhakar Srivatsa
 
-mardziel14timefcs:
-  title: "Adversary Gain vs. Defender Loss in Quantified Information Flow"
-  venue: FCS
-  year: 2014
-  pdf: http://www.cs.umd.edu/~mwh/papers/qifgl.pdf
-  authors:
-    - Piotr Mardziel
-    - Mario Alvim
-    - Michael Hicks
+Tech-reports / Pre-prints:
+  lu2018gender:
+    title: Gender Bias in Neural Natural Language Processing
+    authors:
+      - Kaiji Lu
+      - Piotr Mardziel
+      - Fangjing Wu
+      - Preetam Amancharla
+      - Anupam Datta
+    year: July 2018
+    venue: arXiv
+    arxiv: 1807.11714
+    pdf: https://arxiv.org/pdf/1807.11714
 
-mardziel13beliefJCS:
-  title: "Dynamic Enforcement of Knowledge-based Security Policies using Probabilistic Abstract Interpretation"
-  venue: JCS
-  year: 2013
-  pdf: http://www.cs.umd.edu/~mwh/papers/beliefpol-extended.pdf
-  authors:
-    - Piotr Mardziel
-    - Stephen Magill
-    - Michael Hicks
-    - Mudhakar Srivatsa
+  sen2018supervising:
+    title: Supervising Feature Influence
+    authors:
+      - Shayak Sen
+      - Piotr Mardziel
+      - Anupam Datta
+      - Matthew Fredrikson
+    year: March 2018
+    venue: arXiv
+    arxiv: 1803.10815
+    pdf: https://arxiv.org/pdf/1803.10815
 
-rastogi13knowledge:
-  title: "Knowledge Inference for Optimizing Secure Multi-party Computation"
-  venue: PLAS
-  year: 2013
-  pdf: http://www.cs.umd.edu/~mwh/papers/smc-knowledge.pdf
-  authors:
-    - Aseem Rastogi
-    - Piotr Mardziel
-    - Matthew Hammer
-    - Michael Hicks
+  Wei_2018:
+    title: Evaluating Design Tradeoffs in Numeric Static Analysis for Java
+    author:
+      - Shiyi Wei
+      - Piotr Mardziel
+      - Andrew Ruef
+      - Jeffrey S. Foster
+      - Michael Hicks
+    year: February 2018
+    venue: arXiv
+    arxiv: 1802.08927
+    pdf: https://arxiv.org/pdf/1802.08927
 
-mardziel12beliefsmc:
-  title: "Knowledge-Oriented Secure Multiparty Computation"
-  venue: PLAS
-  year: 2012
-  pdf: http://www.cs.umd.edu/~mwh/papers/belief-smc.pdf
-  authors:
-    - Piotr Mardziel
-    - Michael Hicks
-    - Jonathan Katz
-    - Mudhakar Srivatsa
+  datta2017latent:
+    title: Latent Factor Interpretations for Collaborative Filtering},
+    authors:
+      - Anupam Datta
+      - Sophia Kovaleva
+      - Piotr Mardziel
+      - Shayak Sen
+    year: November 2017
+    venue: arXiv
+    arxiv: 1711.10816
+    pdf: https://arxiv.org/pdf/1711.10816
 
-mardziel13beliefTR:
-  title: "Dynamic Enforcement of Knowledge-based Security Policies (extended version)"
-  venue: TR-UMD
-  year: July 2011
-  pdf: http://www.cs.umd.edu/~mwh/papers/beliefpolTR.pdf
-  authors:
-    - Piotr Mardziel
-    - Stephen Magill
-    - Michael Hicks
-    - Mudhakar Srivatsa
+  datta2017discriminationTR:
+    title: "Proxy Non-Discrimination in Data-Driven Systems"
+    venue: arXiv
+    arxiv: 1707.08120
+    year: July 2017
+    pdf: http://arxiv.org/pdf/1707.08120.pdf
+    authors:
+      - Anupam Datta
+      - Matthew Fredrikson
+      - Gihyuk Ko
+      - Piotr Mardziel
+      - Shayak Sen
 
-mardziel11belief:
-  title: Dynamic Enforcement of Knowledge-based Security Policies
-  venue: CSF
-  year: 2011
-  pdf: http://www.cs.umd.edu/~mwh/papers/beliefpol.pdf
-  authors:
-    - Piotr Mardziel
-    - Stephen Magill
-    - Michael Hicks
-    - Mudhakar Srivatsa
+  datta2017useprivacyTR:
+    title: "Use Privacy in Data-Driven Systems: Theory and Experiments with Machine Learnt Programs (extended version)"
+    venue: arXiv
+    arxiv: 1705.07807
+    year: July 2017
+    pdf: http://arxiv.org/pdf/1705.07807.pdf
+    authors:
+      - Anupam Datta
+      - Matthew Fredrikson
+      - Gihyuk Ko
+      - Piotr Mardziel
+      - Shayak Sen
+
+  alvim2017quantifyingTR:
+    title: "Quantifying vulnerability of secret generation using hyper-distributions (extended version)"
+    venue: arXiv
+    arxiv: 1701.04174
+    year: January 2017
+    pdf: http://arxiv.org/pdf/1701.04174.pdf
+    authors:
+      - Mario Alvim
+      - Piotr Mardziel
+      - Michael Hicks
+
+  ruef2016build:
+    title: "Build It, Break It, Fix It: Contesting Secure Development"
+    authors:
+      - Andrew Ruef
+      - Michael Hicks
+      - James Parker
+      - Dave Levin
+      - Michelle L. Mazurek
+      - Piotr Mardziel
+    year: June 2016
+    venue: arXiv
+    arxiv: 1606.01881
+
+  khouzani15pickingTR:
+    title: "Picking vs. Guessing Secrets: A Game-Theoretic Analysis (extended version)"
+    venue: arXiv
+    arxiv: 1505.02325
+    year: May 2015
+    pdf: http://arxiv.org/pdf/1505.02325.pdf
+    authors:
+      - MHR Khouzani
+      - Piotr Mardziel
+      - Carlos Cid
+      - Mudhakar Srivatsa
+
+  mardziel14timeTR:
+    title: "Quantifying Information Flow for Dynamic Secrets (extended version)"
+    venue: TR-UMD
+    year: May 2014
+    pdf: http://www.cs.umd.edu/~mwh/papers/qif-dynamic-secrets-tr.pdf
+    authors:
+      - Piotr Mardziel
+      - Mario Alvim
+      - Michael Hicks
+      - Michael R. Clarkson
+
+  mardziel13beliefTR:
+    title: "Dynamic Enforcement of Knowledge-based Security Policies (extended version)"
+    venue: TR-UMD
+    year: July 2011
+    pdf: http://www.cs.umd.edu/~mwh/papers/beliefpolTR.pdf
+    authors:
+      - Piotr Mardziel
+      - Stephen Magill
+      - Michael Hicks
+      - Mudhakar Srivatsa

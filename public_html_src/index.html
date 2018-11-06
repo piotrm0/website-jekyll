@@ -98,18 +98,21 @@ Signals and Systems: Deep Learning
 
 	<div class="keywords col"> <!-- long -->
 	  <ul>
-	    <li><small>Computer Systems: Security and Privacy:</small>
+	    <li><small>Computer Systems: Security and Privacy:</small><br/>
+	      <span>Foundations and Formal Methods</span>,
 	      <span>Analytics and Machine Learning</span></li>
-	    <li><small>Computer Systems: Security and Privacy:</small>
-	      <span>Foundations and Formal Methods</span></li>
-	    <li><small>Computer Systems: Application Domains:</small>
-	      <span>Machine learning</span></li>
-	    <li><small>Signal Processing, Communications and Controls: Data Science:</small>
-	      <span>Machine Learning</span></li>
-	    <li><small>Signal Processing, Communications and Controls: Data Science:</small>
-	      <span>Deep Learning</span></li>
-	    <li><small>Signal Processing, Communications and Controls: Theoretical Foundations:</small>
+
+	    <li><small>Signal Processing, Communications and Controls: Theoretical
+	    Foundations:</small><br/>
 	      <span>Information Theory</span></li>
+
+	    <li><small>Computer Systems: Application Domains:</small><br/>
+	      <span>Machine learning</span></li>
+
+	    <li><small>Signal Processing, Communications and Controls: Data Science:</small><br/>
+	      <span>Machine Learning</span>,
+	      <span>Deep Learning</span>
+	    </li>
 	  </ul>
 	</div>
       </p>
@@ -221,11 +224,14 @@ Signals and Systems: Deep Learning
         </div>
         -->
 
+    {%- for paper_types in site.data.papers -%}
+
     <div class="debug col-12">
-      <h2><a name="papers">Papers</a></h2>
+      <h2><a name="papers">{{ paper_types[0] }}</a></h2>
 
       <ul class="debug row">
-	{%- for paper_dict in site.data.papers -%}
+
+	{%- for paper_dict in paper_types[1] -%}
 	{%- assign ref = paper_dict[0] -%}
 	{%- assign paper = paper_dict[1] -%}
 	{%- assign venue_short = paper.venue -%}
@@ -256,6 +262,8 @@ Signals and Systems: Deep Learning
       </ul>
     </div>
 
+    {%- endfor -%}
+
     <div class="debug col-12">
       <h2><a name="talks">Talks</a></h2>
       <ul class="debug row">
@@ -271,7 +279,9 @@ Signals and Systems: Deep Learning
 	    {%- endfor -%}
 	  </ul>
 	</li>
+
 	{%- endfor -%}
+
       </ul>
     </div>
 
