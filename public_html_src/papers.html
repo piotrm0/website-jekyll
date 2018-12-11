@@ -1,0 +1,42 @@
+---
+layout: blank
+---
+
+<html>
+  <body>
+
+{%- for paper_types in site.data.papers -%}
+
+<h2>{{ paper_types[0] }}</h2>
+
+<ul>
+  {%- for paper_dict in paper_types[1] -%}
+  {%- assign ref = paper_dict[0] -%}
+  {%- assign paper = paper_dict[1] -%}
+  {%- assign venue_short = paper.venue -%}
+  {%- assign venue = site.data.venues[venue_short] -%}
+
+  <li>
+
+    {% for author_name in paper.authors -%}
+    {% assign author = site.data.authors[author_name] -%}
+    {{- author_name -}}
+    {% if forloop.last %}{% else %}, {% endif %}
+    {%- endfor -%}.
+
+    <a href="{{ paper.pdf }}">{{ paper.title }}</a>.
+    {% if venue.long -%}
+      {{ venue.long }} ({{ venue_short }})
+    {%- else -%}
+      {{ venue_short }}
+    {%- endif -%} .
+    {{ paper.year }}.
+
+  </li>
+  {%- endfor -%}
+</ul>
+
+{%- endfor -%}
+
+  </body>
+</html>
