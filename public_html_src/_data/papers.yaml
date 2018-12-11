@@ -174,7 +174,7 @@ Tech-reports / Pre-prints:
 
   Wei_2018:
     title: Evaluating Design Tradeoffs in Numeric Static Analysis for Java
-    author:
+    authors:
       - Shiyi Wei
       - Piotr Mardziel
       - Andrew Ruef
@@ -245,6 +245,7 @@ Tech-reports / Pre-prints:
       - Piotr Mardziel
     year: June 2016
     venue: arXiv
+    pdf: https://arxiv.org/pdf/1606.01881
     arxiv: 1606.01881
 
   khouzani15pickingTR:

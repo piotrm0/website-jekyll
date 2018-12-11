@@ -2,8 +2,10 @@
 layout: blank
 ---
 
+{%- for paper_types in site.data.papers -%}
+{{ paper_types[0] }}
 
-{%- for paper_dict in site.data.papers -%}
+{% for paper_dict in paper_types[1] -%}
 {%- assign ref = paper_dict[0] -%}
 {%- assign paper = paper_dict[1] -%}
 {%- assign venue_short = paper.venue -%}
@@ -23,3 +25,4 @@ layout: blank
 {{ paper.pdf }}
 
 {% endfor -%}
+{%- endfor -%}
