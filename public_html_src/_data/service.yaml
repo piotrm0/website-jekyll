@@ -3,9 +3,13 @@ Committees:
     url: https://www.ieee-security.org/TC/SP2019/
     years: 2019, 2020
 
+  CSF:
+    url: https://www.ieee-security.org/CSFWweb
+    years: 2020
+
   PLAS:
     url: https://plas2018.dcc.ufmg.br
-    years: 2018
+    years: 2018, 2019 (co-chair)
 
   WPES:
     url: https://wpes.tech

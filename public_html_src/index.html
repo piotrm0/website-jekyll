@@ -49,7 +49,7 @@ layout: default
 
         <div class="debug col-6 col-sm-12 col-md-6">
           <a href="http://fairlyaccountable.org">
-	    <img alt="Accountable Systems Lab" class="col-12" src="https://fairlyaccountable.org/images/asl_logo.png"/><br/>
+	    <img alt="Accountable Systems Lab" class="col-12 p-3" src="https://fairlyaccountable.org/images/asl_logo.png"/><br/>
 	    <!-- ASL@CMU--></a>
           <!-- a href="http://www.cmu.edu">CMU</a><br/><br/-->
           <!-- a href="http://www.cylab.cmu.edu">CyLab</a><br/><br/-->
@@ -78,9 +78,9 @@ layout: default
           applications to privacy and fairness.
 	</span>
 	<span id="simple"
-	      style="display: none; font-family: 'Comic Sans MS', cursive, sans-serif;">
-	  I work on making computers explain themselves. I want to make sure computers do not learn
-	  sad things from the sad world or remember things about us we would rather they not. This
+	      style="display: none; font-family: 'Comic Sans MS', cursive, sans-serif;"> I work on
+	  making computers explain themselves. I want to make sure computers do not learn sad
+	  things from the sad world or remember things about us we would rather they not. This
 	  makes the world not as sad and computers not as bad. Woof woof.
 	</span>
       </p>
@@ -89,9 +89,27 @@ layout: default
         Previously I was a PhD student and post-doc in the Programming Languages at University of
         Maryland (<a href="http://www.cs.umd.edu/projects/PL/">PLUM</a>) group where I worked on
         probabilistic programming with applications for privacy and quantitative information flow.
-        According to CMU's keywords, my interests are:
+        My interests include:
 
-	<div class="keywords col"> <!-- long -->
+	<div class="row">
+
+	{%- for cat in site.data.topics -%}
+	<div class="keywords col-12 col-lg-6">
+	  {{ cat[0] }}:
+	  <ul>
+	    {%- for keyword in cat[1] -%}
+	    {%- if keyword[1] >= 7 -%}
+            <li><b>{{ keyword[0] }}</b></li>
+            {%- elsif keyword[1] >= 5 -%}
+            <li>{{ keyword[0] }}</li>
+	    {%- endif -%}
+	    {%- endfor -%}
+	  </ul>
+	</div>
+	{%- endfor -%}
+
+	<div class="keywords col-12 col-sm-12"> <!-- long -->
+	  CMU Keywords:
 	  <ul>
 	    <li><small>Computer Systems: Security and Privacy:</small><br/>
 	      <span>Foundations and Formal Methods</span>,
@@ -110,6 +128,10 @@ layout: default
 	    </li>
 	  </ul>
 	</div>
+
+
+	</div>
+
       </p>
 
     </div>
