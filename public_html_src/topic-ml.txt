@@ -1,0 +1,10 @@
+CMU:SV Sneak Peek Talk:
+
+Deep neural networks and other state-of-the-art machine learning techniques produce opaque models
+resistant to human introspection. This leads to unintended consequences such as privacy and
+fairness violations: Google offered ads for high-paying executive jobs more often to men than to
+women, the U.S. retailer Target inferred that a young woman was pregnant from her purchases and
+inadvertently revealed this private information to her farther by offering discounts for
+baby-related products. Discovering and correcting for such problematic behaviors requires novel
+transparency techniques. I will give an overview of the work we are doing at CMU:SV to address
+these problems and the student project options for the fall semester.
