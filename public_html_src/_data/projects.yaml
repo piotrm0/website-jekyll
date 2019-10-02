@@ -1,25 +1,64 @@
-Currently:
-  "Foundations of Privacy":
-    link_url: "https://www.archive.ece.cmu.edu/~ece734"
-    link_name: CMU ECE 18-734 Fall 2018
-  "Privacy and fairness for machine learning":
-    collabs: Anupam Datta, Matt Fredriskon, students Shayak Sen, Gihyuk Ko
-  "Transparency and interpretable machine learning":
-    collabs: Anupam Datta, students Sophia Kovalova, Raj Gupta
-  "Static analysis, abstract interpretation of java bytecode":
-    collabs: PLUM
-Recently:
-  "Privacy with origin":
-    collabs: Anupam Datta, Michael Tschantz, Sebastian Benthall, Helen Nissenbaum
-  "Quantitative information flow for dynamic data":
-    collabs: Mario Alvim, Michael Hicks, Michael Clarkson
-  "Game theoretic analysis of password authentication":
-    collabs: MHR Khouzani, Carlos Cid, Mudhakar Srivatsa
-  "Inference control":
-    collabs: Michael Hicks, Stephen Magill, Mudhakar Srivatsa, Jon Katz
-  "Abstract interpretation of probabilistic program semantics":
-    collabs: Michael Hicks, Stephen Magill
-  "Secure software development contest":
-    link_url: "http://builditbreakit.org"
-    link_name: "Builid It, Break It, Fix It"
-    collabs: PLUM
+Courses:
+  "(Spring 2020, Coming soon) Security and Fairness of Deep Learning; CMU ECE 18-739":
+    #link_url: "TBD"
+  "(Fall 2018) Foundations of Privacy; CMU ECE 18-734":
+    link_url: "https://www.archive.ece.cmu.edu/~ece734/fall2018"
+Current Students:
+  "(PhD) Sophia Kovaleva":
+    link_url: https://www.andrew.cmu.edu/user/mkovalev/
+    project: Explaining and Debiasing Deep Learning Models
+  "(PhD) Caleb Lu":
+    project: Bias in Natural Language Processing
+  "(PhD) Zifan Wang":
+    project: Attribution Methods and Evaluations
+  "(MS) Joseph Konan":
+    project: Linear Diagnostics for Causal Learning
+  "(MS) Ruili Zhu":
+    project: Explanations for Machine Vision
+  "(MS) Wan Wei":
+      project: Explanations for Natural Language Processing Models
+  "(MS) Siddharth Mehta":
+    project: Explanations for Machine Vision Models
+  "(MS) Gaurav Shegokar":
+    project: Explanations for Natural Language Processing Models
+  "(HS) Sahil Jain":
+    project: Explanations for Machine Vision Models
+Former Students:
+  "(MS) Bonan Jin":
+    project: Explanations for Machine Vision Models
+  "(MS) Yucai Fan":
+    project: Explanations for Machine Vision Models
+  "(MS) Yi-Ping Hsu":
+    project: Explanations for Spatio-Temporal Deep Learning Models
+  "(MS) Zilu Zhang":
+    project: Explanations for Spatio-Temporal Deep Learning Models
+  "(MS) Jakob Cassiman":
+    project: Explanations for Deep Reinforcement Learning
+  "(MS) Dharini Krishna":
+    project: Explanations for Machine Vision Models
+  "(MS) Raj Gupta":
+    project: Explaining Deep Malware Classification Models
+  "(UG) Aashai Avadhani":
+    project: Bias in Natural Language Processing
+
+#  "Privacy and fairness for machine learning":
+#    collabs: Anupam Datta, Matt Fredriskon, students Shayak Sen, Gihyuk Ko
+#  "Transparency and interpretable machine learning":
+#    collabs: Anupam Datta, students Sophia Kovalova, Raj Gupta
+#  "Static analysis, abstract interpretation of java bytecode":
+#    collabs: PLUM
+#Recently:
+#  "Privacy with origin":
+#    collabs: Anupam Datta, Michael Tschantz, Sebastian Benthall, Helen Nissenbaum
+#  "Quantitative information flow for dynamic data":
+#    collabs: Mario Alvim, Michael Hicks, Michael Clarkson
+#  "Game theoretic analysis of password authentication":
+#    collabs: MHR Khouzani, Carlos Cid, Mudhakar Srivatsa
+#  "Inference control":
+#    collabs: Michael Hicks, Stephen Magill, Mudhakar Srivatsa, Jon Katz
+#  "Abstract interpretation of probabilistic program semantics":
+#    collabs: Michael Hicks, Stephen Magill
+#  "Secure software development contest":
+#    link_url: "http://builditbreakit.org"
+#    link_name: "Builid It, Break It, Fix It"
+#    collabs: PLUM

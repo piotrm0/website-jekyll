@@ -176,17 +176,16 @@ layout: default
 
     {%- for epoch in site.data.projects -%}
     <div class="debug col-12">
-      <h2><a name="{{ epoch[0] }}">{{ epoch[0] }}</a></h2>
+      <h3><a name="{{ epoch[0] }}">{{ epoch[0] }}</a></h3>
       <ul class="debug row">
 	{% for project_dict in epoch[1] %}
 	{% assign project_name = project_dict[0] %}
 	{% assign project = project_dict[1] %}
-	<li class="debug col-12 col-xl-6 pr-5 pl-1 mb-2">
-	  {{ project_name }}
+	<li class="debug col-6 col-xl-6 pr-5 pl-1 mb-2">
 	  {% if project.link_url %}
-	  <br/><a href="{{ project.link_url }}">{{ project.link_name }}</a>
+	  <a href="{{ project.link_url }}">{% if project.link_name %}{{ project.link_name }}{% else %}{{ project_name }}{% endif %}</a>
 	  {% else %}
-	  <a href=""></a>
+  	    {{ project_name }}
 	  {% endif %}
 	    {% if project.collabs %}
 	    <br/><small>with {{ project.collabs }}</small>
