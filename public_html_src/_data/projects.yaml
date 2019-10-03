@@ -15,7 +15,7 @@ Current Students:
   Linear Diagnostics for Causal Learning:
     students:
       - "(MS) Joseph Konan"
-  Explanations for Machine Vision Models:
+  Explanations for Machine Vision:
     students:
       - "(MS) Ruili Zhu"
       - "(MS) Siddharth Mehta"
@@ -24,20 +24,20 @@ Current Students:
       - "(MS) Bonan Jin"
       - "(MS) Yucai Fan"
       - "(MS) Dharini Krishna"
-  Explanations for Natural Language Processing Models:
+  Gender Bias in Natural Language Processing:
     students:
       - "(MS) Wan Wei"
       - "(MS) Gaurav Shegokar"
     former:
       - "(UG) Aashai Avadhani"
-  Explanations for Spatio-Temporal Deep Learning Models:
+  Explanations for Spatio-Temporal Deep Learning:
     former:
       - "(MS) Yi-Ping Hsu"
       - "(MS) Zilu Zhang"
   Explanations for Deep Reinforcement Learning:
     former:
       - "(MS) Jakob Cassiman"
-  Explanations for Deep Malware Classification Models:
+  Deep Malware Classification:
     former:
       - "(MS) Raj Gupta"
 
