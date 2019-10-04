@@ -32,7 +32,6 @@ $color-dark-green: rgb(34, 68, 51);
 
 body, html {
     height: 100%;
-    font-size: 1.0em;
 }
 
 a:link,
@@ -64,22 +63,18 @@ a:hover {
 }
 
 h1 {
-    font-size: 4ex;
     border-bottom: 0.5ex solid $color-cmu-red;
 }
 
 h2 {
-    font-size: 3.5ex;
     border-bottom: 0.4ex solid $color-cmu-red;
 }
 
 h3 {
-    font-size: 3ex;
     border-bottom: 0.3ex solid $color-cmu-red;
 }
 
 h4 {
-    font-size: 2.5ex;
     border-bottom: 0.2ex solid $color-cmu-red;
 }
 
