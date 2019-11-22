@@ -3,6 +3,10 @@ Committees:
     url: https://www.ieee-security.org/TC/SP2019/
     years: 2019, 2020
 
+  CCS:
+    url: https://www.sigsac.org/ccs/CCS2020/
+    years: 2020
+
   CSF:
     url: https://www.ieee-security.org/CSFWweb
     years: 2020
@@ -11,13 +15,13 @@ Committees:
     url: https://plas2018.dcc.ufmg.br
     years: 2018, 2019 (co-chair)
 
-  WPES:
-    url: https://wpes.tech
-    years: 2018
-
   FAT*:
     url: https://fatconference.org
     years: 2018, 2019
+
+  WPES:
+    url: https://wpes.tech
+    years: 2018
 
   FCS:
     url: https://people.mpi-sws.org/~dg/events/fcs2016

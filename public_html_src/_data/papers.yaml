@@ -1,4 +1,14 @@
 Papers:
+  dutta19exempt:
+    title: "An Information-Theoretic Quantification of Discrimination with Exempt Features"
+    venue: AAAI
+    year: 2019
+    authors:
+      - Sanghamitra Dutta
+      - Praveen Venkatesh
+      - Piotr Mardziel
+      - Anupam Datta
+      - Pulkit Grover
   wei2018evaluating:
     title: "Evaluating Design Tradeoffs in Numeric Static Analysis for Java"
     venue: ESOP
