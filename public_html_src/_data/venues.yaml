@@ -19,6 +19,10 @@ LMCS:
   url: https://lmcs.episciences.org
   type: journal
 
+AAAI:
+  long: AAAI Conference on Artificial Intelligence
+  org: AAAI
+  type: conference
 S&P/Oakland:
   long: Symposium on Security and Privacy
   org: IEEE
