@@ -18,6 +18,10 @@ LMCS:
   long: Logical Methods in Computer Science
   url: https://lmcs.episciences.org
   type: journal
+Entropy:
+  long: Entropy
+  url: https://www.mdpi.com/journal/entropy
+  type: journal
 
 AAAI:
   long: AAAI Conference on Artificial Intelligence
