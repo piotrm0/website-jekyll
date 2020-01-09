@@ -1,62 +1,79 @@
-S&P Topics:
-  Access control and authorization: 3
-  Anonymity: 5
-  Application security: 2
-  Attacks and defenses: 2
-  Authentication: 1
-  Blockchains and distributed ledger security: 3
-  Censorship resistance: 0
-  Cloud security: 0
-  Cyber physical systems security: 0
-  Distributed systems security: 1
-  Economics of security and privacy: 2
-  Embedded systems security: 1
-  Forensics: 0
-  Hardware security: 0
-  Intrusion detection and prevention: 3
-  Malware and unwanted software: 3
-  Mobile and Web security and privacy: 3
-  Language-based security: 10
-  Machine learning and AI security: 8
-  Network and systems security: 3
-  Privacy technologies and mechanisms: 8
-  Protocol security: 3
-  Secure information flow: 10
-  Security and privacy for the Internet of Things: 3
-  Security and privacy metrics: 4
-  Security and privacy policies: 3
-  Security architectures: 1
-  Usable security and privacy: 3
-  Trustworthy computing: 0
-  Web security: 1
+S&P:
+  logo: "https://www.ieee-security.org/images/new-print/Trojan_Head_2-facer-trans.png"
+  url: https://www.ieee-security.org/TC/SP2020/
+  topics:
+    Access control and authorization: 3
+    Anonymity: 5
+    Application security: 2
+    Attacks and defenses: 2
+    Authentication: 1
+    Blockchains and distributed ledger security: 3
+    Censorship resistance: 0
+    Cloud security: 0
+    Cyber physical systems security: 0
+    Distributed systems security: 1
+    Economics of security and privacy: 2
+    Embedded systems security: 1
+    Forensics: 0
+    Hardware security: 0
+    Intrusion detection and prevention: 3
+    Malware and unwanted software: 3
+    Mobile and Web security and privacy: 3
+    Language-based security: 10
+    Machine learning and AI security: 8
+    Network and systems security: 3
+    Privacy technologies and mechanisms: 8
+    Protocol security: 3
+    Secure information flow: 10
+    Security and privacy for the Internet of Things: 3
+    Security and privacy metrics: 4
+    Security and privacy policies: 3
+    Security architectures: 1
+    Usable security and privacy: 3
+    Trustworthy computing: 0
+    Web security: 1
 
-CSF Topics:
-  access control: 3
-  accountability: 10
-  anonymity and privacy: 8
-  authentication: 3
-  blockchain: 3
-  computer-aided cryptography: 1
-  data and system integrity: 1
-  database security: 1
-  decidability and complexity: 1
-  distributed systems security: 1
-  electronic voting: 1
-  formal methods and verification: 5
-  decision theory: 0
-  hardware-based security: 0
-  information flow control: 10
-  intrusion detection: 3
-  language-based security: 10
-  machine learning: 8
-  network security: 3
-  data provenance: 3
-  mobile security: 3
-  security metrics: 4
-  security protocols: 3
-  smart contract: 3
-  software security: 5
-  socio-technical security: 3
-  trust management: 1
-  usable security: 1
-  web security: 3
+CSF:
+  logo: http://site.ieee.org/sb-liubc/files/2015/08/%E4%B8%8B%E8%BD%BD.png
+  url: https://www.ieee-security.org/TC/CSF2020/
+  topics:
+    access control: 3
+    accountability: 10
+    anonymity and privacy: 8
+    authentication: 3
+    blockchain: 3
+    computer-aided cryptography: 1
+    data and system integrity: 1
+    database security: 1
+    decidability and complexity: 1
+    distributed systems security: 1
+    electronic voting: 1
+    formal methods and verification: 5
+    decision theory: 0
+    hardware-based security: 0
+    information flow control: 10
+    intrusion detection: 3
+    language-based security: 10
+    machine learning: 8
+    network security: 3
+    data provenance: 3
+    mobile security: 3
+    security metrics: 4
+    security protocols: 3
+    smart contract: 3
+    software security: 5
+    socio-technical security: 3
+    trust management: 1
+    usable security: 1
+    web security: 3
+
+CMU:
+  logo: https://www.cmu.edu/brand/brand-guidelines/images/seal-4c-600x600-min.jpg
+  url: http://www.cmu.edu
+  topics:
+    "Security and Privacy: Foundations and Formal Methods": 6
+    "Security and Privacy: Analytics and Machine Learning": 4
+    "Theoretical Foundations: Information Theory": 3
+    "Application Domains: Machine learning": 6
+    "Data Science: Machine Learning": 6
+    "Data Science: Deep Learning": 6

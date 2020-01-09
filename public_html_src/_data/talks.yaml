@@ -1,3 +1,10 @@
+- url: https://docs.google.com/presentation/d/1iAMUvJRnuiUZ38eYsysMTTDa-T5IkGkN88c84u44sgQ/edit?usp=sharing
+  icon: images/icon_ppt.svg
+  title: "Use Privacy in Data-Driven Systems: Theory and Experiments with Machine Learnt Programs"
+  presented:
+    - where: "Conference on Computer & Communications Security (CCS)"
+      when: 2017
+
 - url: docs/mardziel15hcss.pres.pptx
   icon: images/icon_ppt.svg
   title: "Models and Games for Quantifying Vulnerability of Secret Information"

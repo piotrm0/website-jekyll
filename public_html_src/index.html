@@ -94,10 +94,18 @@ layout: default
 	<div class="row">
 
 	{%- for cat in site.data.topics -%}
-	<div class="keywords col-12 col-lg-6">
-	  {{ cat[0] }}:
+	<div class="keywords col-12 col-md-12 col-lg-6 col-xl-4">
+	  {%- if cat[1].url -%}
+	  <a href="{{ cat[1].url }}">
+	  {%- endif -%}
+	  {%- if cat[1].logo -%}
+	  <img height="50" src="{{ cat[1].logo }}"/>
+	  {%- endif -%}
+	  {{ cat[0] }}
+	  {%- if cat[1].url -%}</a>{%- endif %}
+	  Topics:
 	  <ul>
-	    {%- for keyword in cat[1] -%}
+	    {%- for keyword in cat[1].topics -%}
 	    {%- if keyword[1] >= 7 -%}
             <li><b>{{ keyword[0] }}</b></li>
             {%- elsif keyword[1] >= 5 -%}
@@ -107,29 +115,6 @@ layout: default
 	  </ul>
 	</div>
 	{%- endfor -%}
-
-	<div class="keywords col-12 col-sm-12"> <!-- long -->
-	  CMU Keywords:
-	  <ul>
-	    <li><small>Computer Systems: Security and Privacy:</small><br/>
-	      <span>Foundations and Formal Methods</span>,
-	      <span>Analytics and Machine Learning</span></li>
-
-	    <li><small>Signal Processing, Communications and Controls: Theoretical
-	    Foundations:</small><br/>
-	      <span>Information Theory</span></li>
-
-	    <li><small>Computer Systems: Application Domains:</small><br/>
-	      <span>Machine learning</span></li>
-
-	    <li><small>Signal Processing, Communications and Controls: Data Science:</small><br/>
-	      <span>Machine Learning</span>,
-	      <span>Deep Learning</span>
-	    </li>
-	  </ul>
-	</div>
-
-
 	</div>
 
       </p>

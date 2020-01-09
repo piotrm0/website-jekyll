@@ -10,9 +10,9 @@ $color-gray-light: rgb(191, 191, 191);
 $color-gray-dark: rgb(77, 77, 77);
 
 /* secondary */
-/*$color-green: rgb(0, 132, 61);*/
+//$color-green: rgb(0, 132, 61);
 $color-yellow: rgb(242, 169, 0);
-/*$color-blue: rgb(0, 45, 114);*/
+//$color-blue: rgb(0, 45, 114);
 
 /* web primary */
 $color-cmu-red: rgb(187, 0, 0);
@@ -34,17 +34,19 @@ body, html {
     height: 100%;
 }
 
+
 a:link,
 a:visited,
 a:hover,
 a:active {
-    color: $color-green;
+//    color: $color-green;
     text-decoration: underline;
 }
 
 a:hover {
     color: $color-blue;
 }
+
 
 .location {
     padding: 1ex;
@@ -53,8 +55,8 @@ a:hover {
 }
 
 .mynav {
-    background-color: $color-dark-green;
-    border-bottom: 1ex solid $color-green;
+    background-color: $color-red;
+//    border-bottom: 1ex solid $color-cmu-red;
 }
 
 .small-bar {
@@ -63,19 +65,19 @@ a:hover {
 }
 
 h1 {
-    border-bottom: 0.5ex solid $color-cmu-red;
+//    border-bottom: 0.5ex solid $color-cmu-red;
 }
 
 h2 {
-    border-bottom: 0.4ex solid $color-cmu-red;
+//    border-bottom: 0.4ex solid $color-cmu-red;
 }
 
 h3 {
-    border-bottom: 0.3ex solid $color-cmu-red;
+//    border-bottom: 0.3ex solid $color-cmu-red;
 }
 
 h4 {
-    border-bottom: 0.2ex solid $color-cmu-red;
+//    border-bottom: 0.2ex solid $color-cmu-red;
 }
 
 hr {

@@ -3,6 +3,7 @@ Papers:
     title: "An Information-Theoretic Quantification of Discrimination with Exempt Features"
     venue: AAAI
     year: 2020
+    pdf: https://users.ece.cmu.edu/~sanghamd/publications/Fairness_Exemptions_AAAI2020.pdf
     authors:
       - Sanghamitra Dutta
       - Praveen Venkatesh
