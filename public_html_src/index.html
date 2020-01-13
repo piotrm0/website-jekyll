@@ -2,18 +2,20 @@
 layout: default
 ---
 
-<div class="container mt-3">
-<div class="row debug">
-<div class="col-12
-            col-sm-12
-            col-md-5
-            col-lg-4
-            col-xl-3">
+<div class="debug container mt-2">
+<div class="debug row">
 
-  <div class="row debug justify-content-center">
+<div class="debug
+	    col-12
+	    col-sm-12
+	    col-md-5
+	    col-lg-4
+	    col-xl-3">
+
+  <div class="row debug justify-content-center sticky-top" style="top: 60px; z-index: 0;">
 
     <div class="col-8 debug
-                col-sm-6
+                col-sm-7
                 col-md-12
                 col-lg-12
                 col-xl-12">
@@ -24,14 +26,14 @@ layout: default
 	   onclick="toggleSummary();"/>
     </div>
 
-    <div class="col-12 debug
-                col-sm-6
+    <div class="debug col-12
+                col-sm-5
                 col-md-12
                 col-lg-12
                 col-xl-12">
-    <h2 class="d-block d-md-none">Piotr (Peter) Mardziel</h2>
+      <h2 class="d-block d-md-none">Piotr (Peter) Mardziel</h2>
 
-      <div class="row debug">
+      <div class="debug row">
         <div class="col-6 col-sm-12 col-md-6">
 	  <span class="nowrap">CMU Silicon Valley</span><br/>
 	  Office: <span class="nowrap">B23 114</span><br/>
@@ -49,33 +51,30 @@ layout: default
 
         <div class="debug col-6 col-sm-12 col-md-6">
           <a href="http://fairlyaccountable.org">
-	    <img alt="Accountable Systems Lab" class="col-12 p-3" src="https://fairlyaccountable.org/images/asl_logo.png"/><br/>
-	    <!-- ASL@CMU--></a>
-          <!-- a href="http://www.cmu.edu">CMU</a><br/><br/-->
-          <!-- a href="http://www.cylab.cmu.edu">CyLab</a><br/><br/-->
-          <a href="http://www.cs.umd.edu/projects/PL/">
+	    <img alt="Accountable Systems Lab" class="col-12 p-3" src="https://fairlyaccountable.org/images/asl_logo.png"/>
+	    <br/>
+	    <!-- ASL@CMU-->
+	  </a>
+          <a href="http://Www.cs.umd.edu/projects/PL/">
 	    <img alt="Programming Languages at University of Maryland" class="col-12" src="http://www.cs.umd.edu/projects/PL/images/PLUM.svg"/><br/>
-	    <!-- PLUM --></a>
+	    <!-- PLUM -->
+	  </a>
 	  <br/>
-        </div>
-
+	</div>
       </div>
     </div>
   </div>
-</div>
+  </div>
+  <!--/div-->
 
 <div class="debug col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
-
   <div class="debug row">
-
     <div class="debug col-12">
-
       <h2 class="d-none d-md-block"><a name="about1">Piotr (Peter) Mardziel</a></h2>
       <h2 class="d-block d-md-none"><a name="about2">About me</a></h2>
       <p>
-        I'm a system<b>s</b> scientist at <a href="http://www.cmu.edu">CMU</a> where
 	<span id="complex"> I work on transparency and accountability in machine learning with
-          applications to privacy and fairness.
+          applications to security, privacy, and fairness.
 	</span>
 	<span id="simple"
 	      style="display: none; font-family: 'Comic Sans MS', cursive, sans-serif;"> I work on
@@ -83,13 +82,9 @@ layout: default
 	  things from the sad world or remember things about us we would rather they not. This
 	  makes the world not as sad and computers not as bad. Woof woof.
 	</span>
-      </p>
 
-      <p>
-        Previously I was a PhD student and post-doc in the Programming Languages at University of
-        Maryland (<a href="http://www.cs.umd.edu/projects/PL/">PLUM</a>) group where I worked on
-        probabilistic programming with applications for privacy and quantitative information flow.
-        My interests include:
+        I also dabble in probabilistic programming and quantitative information flow. My interests
+        include:
 
 	<div class="row">
 
@@ -200,7 +195,8 @@ layout: default
     {%- endfor -%}
 
     <div class="debug col-12">
-      <h2><a name="service">Service</a></h2>
+      <a name="service"></a>
+      <h2>Service</h2>
       <div class="debug row">
 
 	{%- for dict in site.data.service -%}
@@ -245,8 +241,11 @@ layout: default
 
     {%- for paper_types in site.data.papers -%}
 
-    <div class="debug col-12">
-      <h2><a name="papers">{{ paper_types[0] }}</a></h2>
+      <div class="debug col-12">
+	<a name="papers"></a>
+
+
+      <h2>{{ paper_types[0] }}</h2>
 
       <ul class="debug row">
 
