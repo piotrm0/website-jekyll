@@ -1,17 +1,30 @@
-All (Carnegie Mellon University)
+Forever:
 Michael Hicks (University of Maryland, College Park)
+
+Right now
+All (Carnegie Mellon University)
+
+Until 2023
+Michelle Mazurek (University of Maryland, College Park) mmazurek@cs.umd.edu
+Dave Levin (University of Maryland, College Park) dml@cs.umd.edu
+Shiyi Wei (University of Texas, Dallas) swei@utdallas.edu
+Jeffrey S. Foster (Tufts University) jfoster@cs.tufts.edu
+Andrew Ruef (University of Maryland, College Park) awruef@cs.umd.edu
+James Parker (University of Maryland, College Park) jp@jamesparker.me
+Daniel Votipka (University of Maryland, College Park), dvotipka@cs.umd.edu
+Jose Manuel Calderon Trilla (Galois) jmct@galois.com
+Stephen Magill (Galois) stephen@galois.com
+Ian Sweet (University of Maryland, College Park) isweet@terpmail.umd.edu
+
 Anupam Datta (Carnegie Mellon University)
-Michelle Mazurek (University of Maryland, College Park)
 Matthew Fredrikson (Carnegie Mellon University)
-Dave Levin (University of Maryland, College Park)
-Shiyi Wei (University of Texas, Dallas)
-Jeffrey S. Foster (Tufts University)
-Mario Alvim (Universidade Federal de Minas Gerais)
-Andrew Ruef (University of Maryland, College Park)
 Gihyuk Ko (Carnegie Mellon University)
 Shayak Sen (Carnegie Mellon University)
-James Parker (University of Maryland, College Park)
 Kaiji Lu (Carnegie Mellon University)
 Fangjing Wu (Carnegie Mellon University)
 Preetam Amancharia (Carnegie Mellon University)
 Sophia Kovaleva (Carnegie Mellon University)
+
+
+Until 2022
+Mario Alvim (Universidade Federal de Minas Gerais) msalvim@dcc.ufmg.br
