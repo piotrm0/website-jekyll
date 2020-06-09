@@ -275,7 +275,8 @@ layout: default
 	  <small>
 	    {%- for author_name in paper.authors -%}
 	    {% assign author = site.data.authors[author_name] %}
-	    <a href="{{ author.url }}">{{ author_name }}</a>{% if forloop.last %}{% else %}, {% endif %}
+	    {%- if author.url -%}<a href="{{ author.url }}">{%- endif -%}{{ author_name }}{%- if author.url -%}</a>{%- endif -%}
+	    {% if forloop.last %}{% else %}, {% endif %}
 	    {% endfor %}
 	  </small>
 

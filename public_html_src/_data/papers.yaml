@@ -1,4 +1,53 @@
 Papers:
+  lu2020influence:
+    title: "Influence Paths for Characterizing Subject-Verb Number Agreement in LSTM Language Models"
+    year: 2020
+    venue: "Annual Conference of the Association for Computational Linguistics (ACL)"
+    authors:
+      - Kaiji Lu
+      - Piotr Mardziel
+      - Klas Leino
+      - Matthew Fredrikson
+      - Anupam Datta
+
+  wang2020interpreting:
+    title: "Interpreting Interpretations: Organizing Attribution Methods by Criteria"
+    venue: "CVPR Workshop on Fair, Data Efficient and Trusted Computer Vision"
+    year: 2020
+    authors:
+      - Zifan Wang
+      - Piotr Mardziel
+      - Anupam Datta
+      - Matt Fredrikson
+
+  wang2020scorecam:
+    title: "Score-CAM: Score-Weighted Visual Explanations for Convolutional Neural Networks"
+    venue: "CVPR Workshop on Fair, Data Efficient and Trusted Computer Vision"
+    year: 2020
+    authors:
+      - Haofan Wang
+      - Zifan Wang
+      - Mengnan Du
+      - Fan Yang
+      - Zijian Zhang
+      - Sirui Ding
+      - Piotr Mardziel
+      - Xia Hu
+
+  parker2020build:
+    title: "Build It, Break It, Fix It: Contesting Secure Development"
+    authors:
+      - James Parker
+      - Michael Hicks
+      - Andrew Ruef
+      - Michelle Mazurek
+      - Dave Levin
+      - Daniel Votipka
+      - Piotr Mardziel
+      - Kelsey R Fulton
+    venue: "ACM Transactions on Privacy and Security (TOPS)"
+    year: 2020
+
   dutta19exempt:
     title: "An Information-Theoretic Quantification of Discrimination with Exempt Features"
     venue: AAAI
@@ -101,7 +150,7 @@ Papers:
       - Piotr Mardziel
       - Mario Alvim
       - Michael Hicks
-      - Michael R. Clarkson
+      - Michael Clarkson
 
   mardziel14timefcs:
     title: "Adversary Gain vs. Defender Loss in Quantified Information Flow"
@@ -252,7 +301,7 @@ Tech-reports / Pre-prints:
       - Michael Hicks
       - James Parker
       - Dave Levin
-      - Michelle L. Mazurek
+      - Michelle Mazurek
       - Piotr Mardziel
     year: June 2016
     venue: arXiv
@@ -280,7 +329,7 @@ Tech-reports / Pre-prints:
       - Piotr Mardziel
       - Mario Alvim
       - Michael Hicks
-      - Michael R. Clarkson
+      - Michael Clarkson
 
   mardziel13beliefTR:
     title: "Dynamic Enforcement of Knowledge-based Security Policies (extended version)"
