@@ -194,44 +194,6 @@ layout: default
     </div>
     {%- endfor -%}
 
-    <div class="debug col-12">
-      <a name="service"></a>
-      <h2>Service</h2>
-      <div class="debug row">
-
-	{%- for dict in site.data.service -%}
-	{%- assign type = dict[0] -%}
-	{%- assign items = dict[1] -%}
-
-	<div class="debug col-12">
-	  <h3>{{ type }}</h3>
-	  <ul class="debug row">
-	    {%- for item_dict in items -%}
-	    {%- assign short = item_dict[0] -%}
-	    {%- assign item = item_dict[1] -%}
-	    {%- assign venue = site.data.venues[short] -%}
-	    <li class="debug col-12 col-xl-6 pl-1 pr-5 mb-2">
-	      {{ venue.org }}
-
-	      {% if item.url -%}
-	      <a href="{{ item.url }}">{{ venue.long }}</a>
-	      {%- else -%}
-	      <a href="{{ venue.url }}">{{ venue.long }}</a>
-	      {%- endif %}
-
-	      ({{ short }})
-
-              <small>{{ item.years }}</small>
-
-	    </li>
-	    {%- endfor -%}
-	  </ul>
-	</div>
-	{%- endfor -%}
-
-      </div>
-    </div>
-
     <!--
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
           <h2>topics</h2>
@@ -306,6 +268,44 @@ layout: default
 	{%- endfor -%}
 
       </ul>
+    </div>
+
+    <div class="debug col-12">
+      <a name="service"></a>
+      <h2>Service</h2>
+      <div class="debug row">
+
+	{%- for dict in site.data.service -%}
+	{%- assign type = dict[0] -%}
+	{%- assign items = dict[1] -%}
+
+	<div class="debug col-12">
+	  <h3>{{ type }}</h3>
+	  <ul class="debug row">
+	    {%- for item_dict in items -%}
+	    {%- assign short = item_dict[0] -%}
+	    {%- assign item = item_dict[1] -%}
+	    {%- assign venue = site.data.venues[short] -%}
+	    <li class="debug col-12 col-xl-6 pl-1 pr-5 mb-2">
+	      {{ venue.org }}
+
+	      {% if item.url -%}
+	      <a href="{{ item.url }}">{{ venue.long }}</a>
+	      {%- else -%}
+	      <a href="{{ venue.url }}">{{ venue.long }}</a>
+	      {%- endif %}
+
+	      ({{ short }})
+
+              <small>{{ item.years }}</small>
+
+	    </li>
+	    {%- endfor -%}
+	  </ul>
+	</div>
+	{%- endfor -%}
+
+      </div>
     </div>
 
   </div>

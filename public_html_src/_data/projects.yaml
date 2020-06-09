@@ -12,28 +12,38 @@ Current Students:
   "(PhD) Zifan Wang":
     project: Attribution Methods and Evaluations
 "MS/UG/HS Projects":
-  Linear Diagnostics for Causal Learning:
+  Membership Inference:
     students:
-      - "(MS) Joseph Konan"
+      - "(UG) Janabelle Wu"
+      - "(MS) Aman Mohanty"
+      - "(MS) Nikhita Nadgauda"
+      - "(MS) Adhiraj Chakraborty"
+  Privacy Risks in Machine Learning Pipelines:
+    students:
+      - "(UG) Raymond Jang"
   Explanations for Machine Vision:
     students:
-      - "(MS) Ruili Zhu"
-      - "(MS) Siddharth Mehta"
+      - "(MS) Akshat Gupta"
       - "(HS) Sahil Jain"
     former:
+      - "(MS) Ruili Zhu"
+      - "(MS) Siddharth Mehta"
       - "(MS) Bonan Jin"
       - "(MS) Yucai Fan"
       - "(MS) Dharini Krishna"
   Gender Bias in Natural Language Processing:
     students:
+    former:
       - "(MS) Wan Wei"
       - "(MS) Gaurav Shegokar"
-    former:
       - "(UG) Aashai Avadhani"
   Explanations for Spatio-Temporal Deep Learning:
     former:
       - "(MS) Yi-Ping Hsu"
       - "(MS) Zilu Zhang"
+  Linear Diagnostics for Causal Learning:
+    former:
+      - "(MS) Joseph Konan"
   Explanations for Deep Reinforcement Learning:
     former:
       - "(MS) Jakob Cassiman"
