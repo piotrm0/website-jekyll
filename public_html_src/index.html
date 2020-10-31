@@ -221,6 +221,9 @@ layout: default
 	  {%- if paper.pdf -%}<a href="{{ paper.pdf }}">
 	    <span class="icon-item"><img src="images/icon_pdf.png"/></span>
 	  </a>{%- endif -%}
+	  {%- if paper.html -%}
+	    <a href="{{ paper.html }}">(html)</a>
+	  {%- endif %}
 	  {%- if paper.pdf -%}<a href="{{ paper.pdf }}">{%- endif -%}
 	    {{ paper.title }}
 	  {%- if paper.pdf -%}</a>{%- endif -%}.<br/>
@@ -249,10 +252,11 @@ layout: default
 
     {%- endfor -%}
 
-    <div class="debug col-12">
+
+    <!--div class="debug col-12">
       <h2><a name="talks">Talks</a></h2>
       <ul class="debug row">
-	{%- for talk in site.data.talks -%}
+	{%- for talk in site.data.talks.doesnotexist -%}
 	<li class="debug col-12 col-xl-6 pl-1 pr-5 mb-2">
 	  <div>
 	    <a href="{{ talk.url }}"><span class="icon-item"><img src="{{ talk.icon }}"/></span></a>
@@ -266,9 +270,8 @@ layout: default
 	</li>
 
 	{%- endfor -%}
-
       </ul>
-    </div>
+    </div-->
 
     <div class="debug col-12">
       <a name="service"></a>

@@ -1,8 +1,38 @@
 Papers:
+  mardziel20fopps:
+    authors:
+      - José Manuel Calderón Trilla
+      - Michael Hicks
+      - Stephen Magill
+      - Piotr Mardziel
+      - Ian Sweet
+    title: "Probabilistic Abstract Interpretation: Sound Inference and Application to Privacy"
+    html: https://www.cambridge.org/core/books/foundations-of-probabilistic-programming/819623B1B5B33836476618AC0621F0EE
+    editors:
+      - Gilles Barthe
+      - Joost-Pieter Katoen
+      - Alexandra Silva
+    venue: "Foundations of Probabilistic Programming, Cambridge University Press"
+    year: 2020
+
+  wang2020smoothed:
+    title: "Smoothed Geometry for Robust Attribution"
+    authors:
+      - Zifan Wang
+      - Haofan Wang
+      - Shakul Ramkumar
+      - Matthew Fredrikson
+      - Piotr Mardziel
+      - Anupam Datta
+    year: 2020
+    venue: "Neural Information Processing Systems (NeurIPS)"
+    pdf: https://arxiv.org/pdf/2006.06643.pdf
+
   lu2020influence:
     title: "Influence Paths for Characterizing Subject-Verb Number Agreement in LSTM Language Models"
     year: 2020
     venue: "Annual Conference of the Association for Computational Linguistics (ACL)"
+    pdf: https://arxiv.org/pdf/2005.01190.pdf
     authors:
       - Kaiji Lu
       - Piotr Mardziel
@@ -14,6 +44,7 @@ Papers:
     title: "Interpreting Interpretations: Organizing Attribution Methods by Criteria"
     venue: "CVPR Workshop on Fair, Data Efficient and Trusted Computer Vision"
     year: 2020
+    pdf: https://arxiv.org/pdf/2002.07985.pdf
     authors:
       - Zifan Wang
       - Piotr Mardziel
@@ -24,6 +55,7 @@ Papers:
     title: "Score-CAM: Score-Weighted Visual Explanations for Convolutional Neural Networks"
     venue: "CVPR Workshop on Fair, Data Efficient and Trusted Computer Vision"
     year: 2020
+    pdf: https://openaccess.thecvf.com/content_CVPRW_2020/papers/w1/Wang_Score-CAM_Score-Weighted_Visual_Explanations_for_Convolutional_Neural_Networks_CVPRW_2020_paper.pdf
     authors:
       - Haofan Wang
       - Zifan Wang
@@ -46,6 +78,7 @@ Papers:
       - Piotr Mardziel
       - Kelsey R Fulton
     venue: "ACM Transactions on Privacy and Security (TOPS)"
+    html: https://dl.acm.org/doi/abs/10.1145/3383773?cid=81460641915
     year: 2020
 
   dutta19exempt:
@@ -59,6 +92,7 @@ Papers:
       - Piotr Mardziel
       - Anupam Datta
       - Pulkit Grover
+
   wei2018evaluating:
     title: "Evaluating Design Tradeoffs in Numeric Static Analysis for Java"
     venue: ESOP
@@ -232,18 +266,18 @@ Tech-reports / Pre-prints:
     arxiv: 1803.10815
     pdf: https://arxiv.org/pdf/1803.10815
 
-  Wei_2018:
-    title: Evaluating Design Tradeoffs in Numeric Static Analysis for Java
-    authors:
-      - Shiyi Wei
-      - Piotr Mardziel
-      - Andrew Ruef
-      - Jeffrey S. Foster
-      - Michael Hicks
-    year: February 2018
-    venue: arXiv
-    arxiv: 1802.08927
-    pdf: https://arxiv.org/pdf/1802.08927
+#  Wei_2018:
+#    title: Evaluating Design Tradeoffs in Numeric Static Analysis for Java
+#    authors:
+#      - Shiyi Wei
+#      - Piotr Mardziel
+#      - Andrew Ruef
+#      - Jeffrey S. Foster
+#      - Michael Hicks
+#    year: February 2018
+#    venue: arXiv
+#    arxiv: 1802.08927
+#    pdf: https://arxiv.org/pdf/1802.08927
 
   datta2017latent:
     title: Latent Factor Interpretations for Collaborative Filtering
@@ -270,74 +304,74 @@ Tech-reports / Pre-prints:
       - Piotr Mardziel
       - Shayak Sen
 
-  datta2017useprivacyTR:
-    title: "Use Privacy in Data-Driven Systems: Theory and Experiments with Machine Learnt Programs (extended version)"
-    venue: arXiv
-    arxiv: 1705.07807
-    year: July 2017
-    pdf: http://arxiv.org/pdf/1705.07807.pdf
-    authors:
-      - Anupam Datta
-      - Matthew Fredrikson
-      - Gihyuk Ko
-      - Piotr Mardziel
-      - Shayak Sen
+#  datta2017useprivacyTR:
+#    title: "Use Privacy in Data-Driven Systems: Theory and Experiments with Machine Learnt Programs (extended version)"
+#    venue: arXiv
+#    arxiv: 1705.07807
+#    year: July 2017
+#    pdf: http://arxiv.org/pdf/1705.07807.pdf
+#    authors:
+#      - Anupam Datta
+#      - Matthew Fredrikson
+#      - Gihyuk Ko
+#      - Piotr Mardziel
+#      - Shayak Sen
 
-  alvim2017quantifyingTR:
-    title: "Quantifying vulnerability of secret generation using hyper-distributions (extended version)"
-    venue: arXiv
-    arxiv: 1701.04174
-    year: January 2017
-    pdf: http://arxiv.org/pdf/1701.04174.pdf
-    authors:
-      - Mario Alvim
-      - Piotr Mardziel
-      - Michael Hicks
+#  alvim2017quantifyingTR:
+#    title: "Quantifying vulnerability of secret generation using hyper-distributions (extended version)"
+#    venue: arXiv
+#    arxiv: 1701.04174
+#    year: January 2017
+#    pdf: http://arxiv.org/pdf/1701.04174.pdf
+#    authors:
+#      - Mario Alvim
+#      - Piotr Mardziel
+#      - Michael Hicks
 
-  ruef2016build:
-    title: "Build It, Break It, Fix It: Contesting Secure Development"
-    authors:
-      - Andrew Ruef
-      - Michael Hicks
-      - James Parker
-      - Dave Levin
-      - Michelle Mazurek
-      - Piotr Mardziel
-    year: June 2016
-    venue: arXiv
-    pdf: https://arxiv.org/pdf/1606.01881
-    arxiv: 1606.01881
+#  ruef2016build:
+#    title: "Build It, Break It, Fix It: Contesting Secure Development"
+#    authors:
+#      - Andrew Ruef
+#      - Michael Hicks
+#      - James Parker
+#      - Dave Levin
+#      - Michelle Mazurek
+#      - Piotr Mardziel
+#    year: June 2016
+#    venue: arXiv
+#    pdf: https://arxiv.org/pdf/1606.01881
+#    arxiv: 1606.01881
 
-  khouzani15pickingTR:
-    title: "Picking vs. Guessing Secrets: A Game-Theoretic Analysis (extended version)"
-    venue: arXiv
-    arxiv: 1505.02325
-    year: May 2015
-    pdf: http://arxiv.org/pdf/1505.02325.pdf
-    authors:
-      - MHR Khouzani
-      - Piotr Mardziel
-      - Carlos Cid
-      - Mudhakar Srivatsa
+#  khouzani15pickingTR:
+#    title: "Picking vs. Guessing Secrets: A Game-Theoretic Analysis (extended version)"
+#    venue: arXiv
+#    arxiv: 1505.02325
+#    year: May 2015
+#    pdf: http://arxiv.org/pdf/1505.02325.pdf
+#    authors:
+#      - MHR Khouzani
+#      - Piotr Mardziel
+#      - Carlos Cid
+#      - Mudhakar Srivatsa
 
-  mardziel14timeTR:
-    title: "Quantifying Information Flow for Dynamic Secrets (extended version)"
-    venue: TR-UMD
-    year: May 2014
-    pdf: http://www.cs.umd.edu/~mwh/papers/qif-dynamic-secrets-tr.pdf
-    authors:
-      - Piotr Mardziel
-      - Mario Alvim
-      - Michael Hicks
-      - Michael Clarkson
+#  mardziel14timeTR:
+#    title: "Quantifying Information Flow for Dynamic Secrets (extended version)"
+#    venue: TR-UMD
+#    year: May 2014
+#    pdf: http://www.cs.umd.edu/~mwh/papers/qif-dynamic-secrets-tr.pdf
+#    authors:
+#      - Piotr Mardziel
+#      - Mario Alvim
+#      - Michael Hicks
+#      - Michael Clarkson
 
-  mardziel13beliefTR:
-    title: "Dynamic Enforcement of Knowledge-based Security Policies (extended version)"
-    venue: TR-UMD
-    year: July 2011
-    pdf: http://www.cs.umd.edu/~mwh/papers/beliefpolTR.pdf
-    authors:
-      - Piotr Mardziel
-      - Stephen Magill
-      - Michael Hicks
-      - Mudhakar Srivatsa
+#   mardziel13beliefTR:
+#     title: "Dynamic Enforcement of Knowledge-based Security Policies (extended version)"
+#     venue: TR-UMD
+#     year: July 2011
+#     pdf: http://www.cs.umd.edu/~mwh/papers/beliefpolTR.pdf
+#     authors:
+#       - Piotr Mardziel
+#       - Stephen Magill
+#       - Michael Hicks
+#       - Mudhakar Srivatsa

@@ -34,7 +34,7 @@ S&P:
     Web security: 1
 
 CSF:
-  logo: http://site.ieee.org/sb-liubc/files/2015/08/%E4%B8%8B%E8%BD%BD.png
+#  logo: http://site.ieee.org/sb-liubc/files/2015/08/%E4%B8%8B%E8%BD%BD.png
   url: https://www.ieee-security.org/TC/CSF2020/
   topics:
     access control: 3
