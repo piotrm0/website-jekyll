@@ -1,4 +1,23 @@
 Papers:
+  lu20gender:
+    authors:
+      - "Kaiji Lu"
+      - "Piotr Mardziel"
+      - "Fangjing Wu"
+      - "Preetam Amancharla"
+      - "Anupam Datta"
+    editors:
+      - "Vivek Nigam"
+      - "Tajana Ban Kirigin"
+      - "Carolyn Talcott"
+      - "Joshua Guttman"
+      - "Stepan Kuznetsov"
+      - "Boon Thau Loo"
+      - "Mitsuhiro Okada"
+    title: "Gender Bias in Neural Natural Language Processing"
+    venue: "Logic, Language, and Security: Essays Dedicated to Andre Scedrov on the Occasion of His 65th Birthday"
+    year: 2020
+    html: https://doi.org/10.1007/978-3-030-62077-6_14
   mardziel20fopps:
     authors:
       - José Manuel Calderón Trilla
@@ -49,7 +68,7 @@ Papers:
       - Zifan Wang
       - Piotr Mardziel
       - Anupam Datta
-      - Matt Fredrikson
+      - Matthew Fredrikson
 
   wang2020scorecam:
     title: "Score-CAM: Score-Weighted Visual Explanations for Convolutional Neural Networks"
@@ -76,7 +95,7 @@ Papers:
       - Dave Levin
       - Daniel Votipka
       - Piotr Mardziel
-      - Kelsey R Fulton
+      - Kelsey Fulton
     venue: "ACM Transactions on Privacy and Security (TOPS)"
     html: https://dl.acm.org/doi/abs/10.1145/3383773?cid=81460641915
     year: 2020
@@ -241,18 +260,32 @@ Papers:
       - Mudhakar Srivatsa
 
 Tech-reports / Pre-prints:
-  lu2018gender:
-    title: Gender Bias in Neural Natural Language Processing
+  chen2020towards:
+    title: "Towards Behavior-Level Explanation for Deep Reinforcement Learning"
     authors:
-      - Kaiji Lu
-      - Piotr Mardziel
-      - Fangjing Wu
-      - Preetam Amancharla
-      - Anupam Datta
-    year: July 2018
+      - "Xuan Chen"
+      - "Zifan Wang"
+      - "Yucai Fan"
+      - "Bonan Jin"
+      - "Piotr Mardziel"
+      - "Carlee Joe-Wong"
+      - "Anupam Datta"
+    pdf: "https://arxiv.org/pdf/2009.08507"
+    year: September 2020
+    arxiv: 2009.08507
     venue: arXiv
-    arxiv: 1807.11714
-    pdf: https://arxiv.org/pdf/1807.11714
+#  lu2018gender:
+#    title: Gender Bias in Neural Natural Language Processing
+#    authors:
+#      - Kaiji Lu
+#      - Piotr Mardziel
+#      - Fangjing Wu
+#      - Preetam Amancharla
+#      - Anupam Datta
+#    year: July 2018
+#    venue: arXiv
+#    arxiv: 1807.11714
+#    pdf: https://arxiv.org/pdf/1807.11714
 
   sen2018supervising:
     title: Supervising Feature Influence

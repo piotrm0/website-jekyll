@@ -8,8 +8,10 @@ Current Students:
     link_url: https://www.andrew.cmu.edu/user/mkovalev/
     project: Explaining and Debiasing Deep Learning Models
   "(PhD) Caleb Lu":
+    link_url: https://www.linkedin.com/in/calebkaijilu/
     project: Bias in Natural Language Processing
   "(PhD) Zifan Wang":
+    link_url: https://zifanw.github.io/
     project: Attribution Methods and Evaluations
 "MS/UG/HS Projects":
   Membership Inference:
@@ -45,6 +47,10 @@ Current Students:
     former:
       - "(MS) Joseph Konan"
   Explanations for Deep Reinforcement Learning:
+    students:
+      - "(MS) Xuan Chen"
+      - "(MS) Yucai Fan"
+      - "(MS) Bonan Jin"
     former:
       - "(MS) Jakob Cassiman"
   Deep Malware Classification:
