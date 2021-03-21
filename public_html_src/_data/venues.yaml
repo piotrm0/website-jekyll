@@ -23,6 +23,9 @@ Entropy:
   url: https://www.mdpi.com/journal/entropy
   type: journal
 
+ACL:
+  long: Annual Meeting of the Association for Computational Linguistics
+  org: ACL
 AAAI:
   long: Conference on Artificial Intelligence
   org: AAAI
@@ -31,7 +34,7 @@ S&P/Oakland:
   long: Symposium on Security and Privacy
   org: IEEE
   type: conference
-FAT*:
+FAccT:
   long: Conference on Fairness, Accountability, and Transparency
   type: conference
 CSF:
@@ -65,7 +68,13 @@ ESOP:
   long: European Symposium on Programming
   org: ETAPS
   type: conference
+PETS:
+  long: Privacy Enhancing Technologies Symposium
+  type: conference
 
+RAI:
+  long: Workshop on Responsible AI
+  type: workshop
 PLAS:
   long: Workshop on Programming Languages and Analysis of Security
   org: ACM

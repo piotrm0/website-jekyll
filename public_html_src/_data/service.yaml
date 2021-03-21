@@ -1,4 +1,16 @@
 Committees:
+  RAI:
+    url: https://sites.google.com/view/rai-workshop/
+    years: 2021 (area chair)
+
+  FAccT:
+    url: https://fatconference.org
+    years: 2018, 2019, 2021
+
+  PETS:
+    url: https://www.petsymposium.org/2021/
+    years: 2021
+
   S&P/Oakland:
     url: https://www.ieee-security.org/TC/SP2019/
     years: 2019, 2020
@@ -11,27 +23,27 @@ Committees:
     url: https://www.ieee-security.org/CSFWweb
     years: 2020
 
-  AAAI:
-    url: https://aaai.org/Conferences/AAAI-21/
-    years: 2021
+  WPES:
+    url: https://wpes.tech
+    years: 2018, 2020
 
   PLAS:
     url: https://plas2018.dcc.ufmg.br
     years: 2018, 2019 (co-chair)
-
-  FAT*:
-    url: https://fatconference.org
-    years: 2018, 2019
-
-  WPES:
-    url: https://wpes.tech
-    years: 2018, 2020
 
   FCS:
     url: https://people.mpi-sws.org/~dg/events/fcs2016
     years: 2016
 
 Reviewer:
+  AAAI:
+    url: https://aaai.org/Conferences/AAAI-21/
+    years: 2021
+
+  ACL:
+    url: https://2021.aclweb.org/
+    years: 2021
+
   S&P/Oakland:
     url: https://www.ieee-security.org/TC/SP2018
     years: 2015-2018

@@ -1,62 +1,64 @@
 Courses:
+  "Trustworthy Machine Learning <span class='nowrap'>(Stanford CS 329T Spring 2021)</span>":
+    link_url: http://web.stanford.edu/class/cs329t/
   "Security and Fairness of Deep Learning <span class='nowrap'>(CMU 18-739 Spring 2020)</span>":
     link_url: "http://course.ece.cmu.edu/~ece739/"
   "Foundations of Privacy <span class='nowrap'>(CMU 18-734 Fall 2018)</span>":
     link_url: "https://www.archive.ece.cmu.edu/~ece734/fall2018"
-Current Students:
-  "(PhD) Sophia Kovaleva":
-    link_url: https://www.andrew.cmu.edu/user/mkovalev/
-    project: Explaining and Debiasing Deep Learning Models
-  "(PhD) Caleb Lu":
-    link_url: https://www.linkedin.com/in/calebkaijilu/
-    project: Bias in Natural Language Processing
-  "(PhD) Zifan Wang":
-    link_url: https://zifanw.github.io/
-    project: Attribution Methods and Evaluations
-"MS/UG/HS Projects":
-  Membership Inference:
-    students:
-      - "(UG) Janabelle Wu"
-      - "(MS) Aman Mohanty"
-      - "(MS) Nikhita Nadgauda"
-      - "(MS) Adhiraj Chakraborty"
-  Privacy Risks in Machine Learning Pipelines:
-    students:
-      - "(UG) Raymond Jang"
-  Explanations for Machine Vision:
-    students:
-      - "(MS) Akshat Gupta"
-      - "(HS) Sahil Jain"
-    former:
-      - "(MS) Ruili Zhu"
-      - "(MS) Siddharth Mehta"
-      - "(MS) Bonan Jin"
-      - "(MS) Yucai Fan"
-      - "(MS) Dharini Krishna"
-  Gender Bias in Natural Language Processing:
-    students:
-    former:
-      - "(MS) Wan Wei"
-      - "(MS) Gaurav Shegokar"
-      - "(UG) Aashai Avadhani"
-  Explanations for Spatio-Temporal Deep Learning:
-    former:
-      - "(MS) Yi-Ping Hsu"
-      - "(MS) Zilu Zhang"
-  Linear Diagnostics for Causal Learning:
-    former:
-      - "(MS) Joseph Konan"
-  Explanations for Deep Reinforcement Learning:
-    students:
-      - "(MS) Xuan Chen"
-      - "(MS) Yucai Fan"
-      - "(MS) Bonan Jin"
-    former:
-      - "(MS) Jakob Cassiman"
-  Deep Malware Classification:
-    former:
-      - "(MS) Raj Gupta"
-
+#Current Students:
+#  "(PhD) Sophia Kovaleva":
+#    link_url: https://www.andrew.cmu.edu/user/mkovalev/
+#    project: Explaining and Debiasing Deep Learning Models
+#  "(PhD) Caleb Lu":
+#    link_url: https://www.linkedin.com/in/calebkaijilu/
+#    project: Bias in Natural Language Processing
+#  "(PhD) Zifan Wang":
+#    link_url: https://zifanw.github.io/
+#    project: Attribution Methods and Evaluations
+#"MS/UG/HS Projects":
+#  Membership Inference:
+#    students:
+#      - "(UG) Janabelle Wu"
+#      - "(MS) Aman Mohanty"
+#      - "(MS) Nikhita Nadgauda"
+#      - "(MS) Adhiraj Chakraborty"
+#  Privacy Risks in Machine Learning Pipelines:
+#    students:
+#      - "(UG) Raymond Jang"
+#  Explanations for Machine Vision:
+#    students:
+#      - "(MS) Akshat Gupta"
+#      - "(HS) Sahil Jain"
+#    former:
+#      - "(MS) Ruili Zhu"
+#      - "(MS) Siddharth Mehta"
+#      - "(MS) Bonan Jin"
+#      - "(MS) Yucai Fan"
+#      - "(MS) Dharini Krishna"
+#  Gender Bias in Natural Language Processing:
+#    students:
+#    former:
+#      - "(MS) Wan Wei"
+#      - "(MS) Gaurav Shegokar"
+#      - "(UG) Aashai Avadhani"
+#  Explanations for Spatio-Temporal Deep Learning:
+#    former:
+#      - "(MS) Yi-Ping Hsu"
+#      - "(MS) Zilu Zhang"
+#  Linear Diagnostics for Causal Learning:
+#    former:
+#      - "(MS) Joseph Konan"
+#  Explanations for Deep Reinforcement Learning:
+#    students:
+#      - "(MS) Xuan Chen"
+#      - "(MS) Yucai Fan"
+#      - "(MS) Bonan Jin"
+#    former:
+#      - "(MS) Jakob Cassiman"
+#  Deep Malware Classification:
+#    former:
+#      - "(MS) Raj Gupta"
+#
 #  "Privacy and fairness for machine learning":
 #    collabs: Anupam Datta, Matt Fredriskon, students Shayak Sen, Gihyuk Ko
 #  "Transparency and interpretable machine learning":
