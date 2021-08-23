@@ -9,12 +9,12 @@ Based on 4 years since last common publication rule:
 Until 2025
 Anupam Datta (Carnegie Mellon University) danupam@cmu.edu
 Pulkit Grover (Carnegie Mellon University) pulkit@cmu.edu
+Sanghamitra Dutta (Carnegie Mellon University) sanghamd@andrew.cmu.edu
 
 Until 2024
 Kaiji Lu (Carnegie Mellon University)
 Matthew Fredrikson (Carnegie Mellon University) mfredrik@cmu.edu
 Klas Leino (Carnegie Mellon University) kleino@cs.cmu.edu
-Sanghamitra Dutta (Carnegie Mellon University) sanghamd@andrew.cmu.edu
 
 Until 2023
 Shayak Sen (Truera)
