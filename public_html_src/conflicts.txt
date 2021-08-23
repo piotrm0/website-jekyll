@@ -1,10 +1,26 @@
 Forever:
-Michael Hicks (University of Maryland, College Park)
+Michael Hicks (University of Maryland, College Park) mwh@cs.umd.edu
 
-Right now
-All (Carnegie Mellon University)
+Right now:
+@truera.com
+
+Based on 4 years since last common publication rule:
+
+Until 2025
+Anupam Datta (Carnegie Mellon University) danupam@cmu.edu
+Pulkit Grover (Carnegie Mellon University) pulkit@cmu.edu
+
+Until 2024
+Kaiji Lu (Carnegie Mellon University)
+Matthew Fredrikson (Carnegie Mellon University) mfredrik@cmu.edu
+Klas Leino (Carnegie Mellon University) kleino@cs.cmu.edu
+Sanghamitra Dutta (Carnegie Mellon University) sanghamd@andrew.cmu.edu
 
 Until 2023
+Shayak Sen (Truera)
+Fangjing Wu (Carnegie Mellon University)
+Preetam Amancharia (Carnegie Mellon University)
+Sophia Kovaleva (Carnegie Mellon University)
 Michelle Mazurek (University of Maryland, College Park) mmazurek@cs.umd.edu
 Dave Levin (University of Maryland, College Park) dml@cs.umd.edu
 Shiyi Wei (University of Texas, Dallas) swei@utdallas.edu
@@ -15,16 +31,6 @@ Daniel Votipka (University of Maryland, College Park), dvotipka@cs.umd.edu
 Jose Manuel Calderon Trilla (Galois) jmct@galois.com
 Stephen Magill (Galois) stephen@galois.com
 Ian Sweet (University of Maryland, College Park) isweet@terpmail.umd.edu
-
-Anupam Datta (Carnegie Mellon University)
-Matthew Fredrikson (Carnegie Mellon University)
-Gihyuk Ko (Carnegie Mellon University)
-Shayak Sen (Carnegie Mellon University)
-Kaiji Lu (Carnegie Mellon University)
-Fangjing Wu (Carnegie Mellon University)
-Preetam Amancharia (Carnegie Mellon University)
-Sophia Kovaleva (Carnegie Mellon University)
-
 
 Until 2022
 Mario Alvim (Universidade Federal de Minas Gerais) msalvim@dcc.ufmg.br
