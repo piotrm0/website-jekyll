@@ -1,4 +1,28 @@
+Categories:
+  mlsec:
+    longname: "ML Security, Privacy, Fairness"
+  mlinterp:
+    longname: "ML Interpretability"
+  sec:
+    longname: "Security and Privacy"
+  static:
+    longname: "Static (and Probabilistic) Analysis"
+
 Papers:
+  sanjari24deamp:
+    title: "De-amplifying Bias from Differential Privacy in Language Model Fine-tuning"
+    authors:
+      - "Sanjari Srivastava"
+      - "Piotr Mardziel"
+      - "Zhikhun Zhang"
+      - "Archana Ahlawat"
+      - "Anupam Datta"
+      - "John C Mitchell"
+    venue: PPAI
+    year: 2024
+    pdf: https://arxiv.org/pdf/2402.04489.pdf
+    categories:
+      - mlsec
   lu20gender:
     authors:
       - "Kaiji Lu"
@@ -18,6 +42,8 @@ Papers:
     venue: "Logic, Language, and Security: Essays Dedicated to Andre Scedrov on the Occasion of His 65th Birthday"
     year: 2020
     html: https://doi.org/10.1007/978-3-030-62077-6_14
+    categories:
+      - mlsec
   mardziel20fopps:
     authors:
       - José Manuel Calderón Trilla
@@ -33,6 +59,9 @@ Papers:
       - Alexandra Silva
     venue: "Foundations of Probabilistic Programming, Cambridge University Press"
     year: 2020
+    categories:
+      - sec
+      - static
 
   wang2020smoothed:
     title: "Smoothed Geometry for Robust Attribution"
@@ -44,13 +73,15 @@ Papers:
       - Piotr Mardziel
       - Anupam Datta
     year: 2020
-    venue: "Neural Information Processing Systems (NeurIPS)"
+    venue: NeurIPS
     pdf: https://arxiv.org/pdf/2006.06643.pdf
+    categories:
+      - mlsec
 
   lu2020influence:
     title: "Influence Paths for Characterizing Subject-Verb Number Agreement in LSTM Language Models"
     year: 2020
-    venue: "Annual Conference of the Association for Computational Linguistics (ACL)"
+    venue: ACL
     pdf: https://arxiv.org/pdf/2005.01190.pdf
     authors:
       - Kaiji Lu
@@ -58,6 +89,8 @@ Papers:
       - Klas Leino
       - Matthew Fredrikson
       - Anupam Datta
+    categories:
+      - mlinterp
 
   wang2020interpreting:
     title: "Interpreting Interpretations: Organizing Attribution Methods by Criteria"
@@ -69,6 +102,8 @@ Papers:
       - Piotr Mardziel
       - Anupam Datta
       - Matthew Fredrikson
+    categories:
+      - mlinterp
 
   wang2020scorecam:
     title: "Score-CAM: Score-Weighted Visual Explanations for Convolutional Neural Networks"
@@ -84,6 +119,8 @@ Papers:
       - Sirui Ding
       - Piotr Mardziel
       - Xia Hu
+    categories:
+      - mlinterp
 
   parker2020build:
     title: "Build It, Break It, Fix It: Contesting Secure Development"
@@ -99,6 +136,8 @@ Papers:
     venue: "ACM Transactions on Privacy and Security (TOPS)"
     html: https://dl.acm.org/doi/abs/10.1145/3383773?cid=81460641915
     year: 2020
+    categories:
+      - sec
 
   dutta19exempt:
     title: "An Information-Theoretic Quantification of Discrimination with Exempt Features"
@@ -111,6 +150,8 @@ Papers:
       - Piotr Mardziel
       - Anupam Datta
       - Pulkit Grover
+    categories:
+      - mlsec
 
   wei2018evaluating:
     title: "Evaluating Design Tradeoffs in Numeric Static Analysis for Java"
@@ -123,6 +164,8 @@ Papers:
       - Andrew Ruef
       - Jeffrey S. Foster
       - Michael Hicks
+    categories:
+      - static
 
   alvim2017quantifying:
     title: "Quantifying vulnerability of secret generation using hyper-distributions"
@@ -133,6 +176,8 @@ Papers:
       - Mario Alvim
       - Piotr Mardziel
       - Michael Hicks
+    categories:
+      - sec
 
   datta2017useprivacy:
     title: "Use Privacy in Data-Driven Systems: Theory and Experiments with Machine Learnt Programs"
@@ -145,6 +190,8 @@ Papers:
       - Gihyuk Ko
       - Piotr Mardziel
       - Shayak Sen
+    categories:
+      - mlsec
 
   ruef2016bibifi:
     title: "Build It, Break It, Fix It: Contesting Secure Development"
@@ -158,6 +205,8 @@ Papers:
       - Dave Levin
       - Michelle Mazurek
       - Piotr Mardziel
+    categories:
+      - sec
 
   alvim16strategy:
     title: "Towards the Quantification of Strategy Leakage"
@@ -168,6 +217,8 @@ Papers:
       - Mario Alvim
       - Piotr Mardziel
       - Michael Hicks
+    categories:
+      - sec
 
   khouzani15picking:
     title: "Picking vs. Guessing Secrets: A Game-Theoretic Analysis"
@@ -179,6 +230,8 @@ Papers:
       - Piotr Mardziel
       - Carlos Cid
       - Mudhakar Srivatsa
+    categories:
+      -sec
 
   ruef15bibifi:
     title: "Build It Break It: Measuring and Comparing Development Security"
@@ -193,6 +246,8 @@ Papers:
       - Atif Memon
       - Jandelyn Plane
       - Piotr Mardziel
+    categories:
+      - sec
 
   mardziel14time:
     title: "Quantifying Information Flow for Dynamic Secrets"
@@ -204,6 +259,8 @@ Papers:
       - Mario Alvim
       - Michael Hicks
       - Michael Clarkson
+    categories:
+      - sec
 
   mardziel14timefcs:
     title: "Adversary Gain vs. Defender Loss in Quantified Information Flow"
@@ -214,6 +271,8 @@ Papers:
       - Piotr Mardziel
       - Mario Alvim
       - Michael Hicks
+    categories:
+      - sec
 
   mardziel13beliefJCS:
     title: "Dynamic Enforcement of Knowledge-based Security Policies using Probabilistic Abstract Interpretation"
@@ -225,6 +284,9 @@ Papers:
       - Stephen Magill
       - Michael Hicks
       - Mudhakar Srivatsa
+    categories:
+      - sec
+      - static
 
   rastogi13knowledge:
     title: "Knowledge Inference for Optimizing Secure Multi-party Computation"
@@ -236,6 +298,8 @@ Papers:
       - Piotr Mardziel
       - Matthew Hammer
       - Michael Hicks
+    categories:
+      - sec
 
   mardziel12beliefsmc:
     title: "Knowledge-Oriented Secure Multiparty Computation"
@@ -247,6 +311,9 @@ Papers:
       - Michael Hicks
       - Jonathan Katz
       - Mudhakar Srivatsa
+    categories:
+      - sec
+      - static
 
   mardziel11belief:
     title: Dynamic Enforcement of Knowledge-based Security Policies
@@ -258,6 +325,9 @@ Papers:
       - Stephen Magill
       - Michael Hicks
       - Mudhakar Srivatsa
+    categories:
+      - sec
+      - static
 
 Tech-reports / Pre-prints:
   chen2020towards:
@@ -274,6 +344,9 @@ Tech-reports / Pre-prints:
     year: September 2020
     arxiv: 2009.08507
     venue: arXiv
+    categories:
+      - mlinterp
+
 #  lu2018gender:
 #    title: Gender Bias in Neural Natural Language Processing
 #    authors:
@@ -298,6 +371,8 @@ Tech-reports / Pre-prints:
     venue: arXiv
     arxiv: 1803.10815
     pdf: https://arxiv.org/pdf/1803.10815
+    categories:
+      - mlsec
 
 #  Wei_2018:
 #    title: Evaluating Design Tradeoffs in Numeric Static Analysis for Java
@@ -323,6 +398,8 @@ Tech-reports / Pre-prints:
     venue: arXiv
     arxiv: 1711.10816
     pdf: https://arxiv.org/pdf/1711.10816
+    categories:
+      - mlinterp
 
   datta2017discriminationTR:
     title: "Proxy Non-Discrimination in Data-Driven Systems"
@@ -336,6 +413,8 @@ Tech-reports / Pre-prints:
       - Gihyuk Ko
       - Piotr Mardziel
       - Shayak Sen
+    categories:
+      - mlsec
 
 #  datta2017useprivacyTR:
 #    title: "Use Privacy in Data-Driven Systems: Theory and Experiments with Machine Learnt Programs (extended version)"

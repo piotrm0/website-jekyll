@@ -2,27 +2,35 @@
 layout: blank
 ---
 
-{%- for paper_types in site.data.papers -%}
-{{ paper_types[0] }}
+{%- for cat_items in site.data.papers['Categories'] -%}
 
-{% for paper_dict in paper_types[1] -%}
-{%- assign ref = paper_dict[0] -%}
-{%- assign paper = paper_dict[1] -%}
-{%- assign venue_short = paper.venue -%}
-{%- assign venue = site.data.venues[venue_short] -%}
+{%- assign cat_key = cat_items[0] -%}
+{%- assign cat = cat_items[1] -%}
 
-{{ paper.title }}
-{{ paper.year }} {% if venue.long -%}{{ venue.long }} ({{ venue_short }})
-{%- else -%}
-{{ venue_short }}
-{%- endif -%}.
-{{- "" }}
-{{- "" }}
-{% for author_name in paper.authors -%}
-{%- assign author = site.data.authors[author_name] -%}
-{{ author_name }}{% if forloop.last -%}{%- else -%}, {% endif -%}
-{%- endfor %}
-{{ paper.pdf }}
+{{ cat.longname }}
 
-{% endfor -%}
+  {% for papers_items in site.data.papers['Papers'] -%}
+
+  {%- assign ref = papers_items[0] -%}
+  {%- assign paper = papers_items[1] -%}
+
+  {%- if paper.categories contains cat_key -%}
+
+  {%- assign venue_short = paper.venue -%}
+  {%- assign venue = site.data.venues[venue_short] -%}
+
+    {% for author_name in paper.authors -%}
+    {% assign author = site.data.authors[author_name] -%}
+    {{- author_name -}}
+    {% if forloop.last %}{% else %}, {% endif %}
+    {%- endfor -%}. {{ paper.title }}. In {% if venue.long -%}
+      {{ venue.long }} ({{ venue_short }})
+    {%- else -%}
+      {{ venue_short }}
+    {%- endif -%}. {{ paper.year }}.
+
+  {% endif %}
+
+  {%- endfor -%}
+
 {%- endfor -%}

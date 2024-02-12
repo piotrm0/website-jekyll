@@ -1,3 +1,10 @@
+PPAI:
+  long: AAAI Workshop on Privacy-Preserving Artificial Intelligence
+  url: https://ppai-workshop.github.io/
+  type: workshop
+NeurIPS:
+  long: Neural Information Processing Systems
+  type: conference
 JCSS:
   long: Journal of Computer and System Sciences
   url: https://www.sciencedirect.com/journal/journal-of-computer-and-system-sciences
@@ -22,7 +29,6 @@ Entropy:
   long: Entropy
   url: https://www.mdpi.com/journal/entropy
   type: journal
-
 ACL:
   long: Annual Meeting of the Association for Computational Linguistics
   org: ACL

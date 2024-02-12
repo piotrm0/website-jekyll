@@ -206,56 +206,39 @@ layout: default
         </div>
         -->
 
-    {%- for paper_types in site.data.papers -%}
-
       <div class="debug col-12">
-	<a name="papers"></a>
+	<a name="papers"><h2>Research</h2></a>
 
+{%- for cat_items in site.data.papers['Categories'] -%}
 
-      <h2>{{ paper_types[0] }}</h2>
+{%- assign cat_key = cat_items[0] -%}
+{%- assign cat = cat_items[1] -%}
 
-      <ul class="debug row">
+<h3>{{ cat.longname }}</h3>
+<ul>
 
-	{%- for paper_dict in paper_types[1] -%}
-	{%- assign ref = paper_dict[0] -%}
-	{%- assign paper = paper_dict[1] -%}
-	{%- assign venue_short = paper.venue -%}
-	{%- assign venue = site.data.venues[venue_short] -%}
+  {%- for papers_items in site.data.papers['Papers'] -%}
 
-	<li class="debug col-12 col-xl-6 pl-1 pr-5 mb-2">
-	  {%- if paper.pdf -%}<a href="{{ paper.pdf }}">
-	    <span class="icon-item"><img src="images/icon_pdf.png"/></span>
-	  </a>{%- endif -%}
-	  {%- if paper.html -%}
-	    <a href="{{ paper.html }}">(html)</a>
-	  {%- endif %}
-	  {%- if paper.pdf -%}<a href="{{ paper.pdf }}">{%- endif -%}
-	    {{ paper.title }}
-	  {%- if paper.pdf -%}</a>{%- endif -%}.<br/>
-	  <small>
-	    {%- if venue.long -%}
-	    {{ venue.long }} ({{ venue_short }})
-	    {%- else -%}
-	    {{ venue_short }}
-	    {%- endif -%}
-	  </small>.
+  {%- assign ref = papers_items[0] -%}
+  {%- assign paper = papers_items[1] -%}
 
-	  <small>{{ paper.year }}</small>.<br/>
+  {% if paper.categories contains cat_key %}
 
-	  <small>
-	    {%- for author_name in paper.authors -%}
-	    {% assign author = site.data.authors[author_name] %}
-	    {%- if author.url -%}<a href="{{ author.url }}">{%- endif -%}{{ author_name }}{%- if author.url -%}</a>{%- endif -%}
-	    {% if forloop.last %}{% else %}, {% endif %}
-	    {% endfor %}
-	  </small>
+  {%- assign venue_short = paper.venue -%}
+  {%- assign venue = site.data.venues[venue_short] -%}
 
-	</li>
-	{%- endfor -%}
-      </ul>
+  <div>
+    <li><a href="{{ paper.pdf }}">{{ paper.title }}</a>.
+    In <i>{{ venue_short }}</i> {{ paper.year }}.
+
     </div>
 
-    {%- endfor -%}
+  {% endif %}
+
+  {%- endfor -%} <!-- end of paper loop -->
+
+  </ul>
+{%- endfor -%} <!-- end of category loop -->
 
 
     <!--div class="debug col-12">

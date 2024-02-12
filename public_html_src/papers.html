@@ -5,19 +5,26 @@ layout: blank
 <html>
   <body>
 
-{%- for paper_types in site.data.papers -%}
+<h2>Research</h2>
 
-<h2>{{ paper_types[0] }}</h2>
+{%- for cat_items in site.data.papers['Categories'] -%}
 
+{%- assign cat_key = cat_items[0] -%}
+{%- assign cat = cat_items[1] -%}
+
+<h3>{{ cat.longname }}</h3>
 <ul>
-  {%- for paper_dict in paper_types[1] -%}
-  {%- assign ref = paper_dict[0] -%}
-  {%- assign paper = paper_dict[1] -%}
+  {%- for papers_items in site.data.papers['Papers'] -%}
+
+  {%- assign ref = papers_items[0] -%}
+  {%- assign paper = papers_items[1] -%}
+
+  {% if paper.categories contains cat_key %}
+
   {%- assign venue_short = paper.venue -%}
   {%- assign venue = site.data.venues[venue_short] -%}
 
   <li>
-
     {% for author_name in paper.authors -%}
     {% assign author = site.data.authors[author_name] -%}
     {{- author_name -}}
@@ -25,18 +32,20 @@ layout: blank
     {%- endfor -%}.
 
     <a href="{{ paper.pdf }}">{{ paper.title }}</a>.
-    {% if venue.long -%}
+
+    In <i>{% if venue.long -%}
       {{ venue.long }} ({{ venue_short }})
     {%- else -%}
       {{ venue_short }}
-    {%- endif -%} .
+    {%- endif -%}</i>.
     {{ paper.year }}.
-
   </li>
-  {%- endfor -%}
-</ul>
 
-{%- endfor -%}
+  {% endif %}
+
+  {%- endfor -%}</ul> <!-- end of paper loop -->
+
+{%- endfor -%} <!-- end of category loop -->
 
   </body>
 </html>
