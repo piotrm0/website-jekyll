@@ -1,5 +1,6 @@
-Piotr Mardziel is a systems scientist in Electrical and Computer Engineering at Carnegie Mellon
-University. His research revolves around interpretability and accountability for privacy and
+Piotr is a research software engineer at Truera working on software for evaluating generative
+models. Previously he was a systems scientist in Electrical and Computer Engineering at Carnegie
+Mellon University where his research included interpretability and accountability for privacy and
 fairness in machine learning pipelines. His work also includes probabilistic programming and formal
 methods with applications to privacy and information security. Prior to joining CMU, Piotr was a
 post-doctoral researcher at CMU CyLab and University of Maryland where he completed his Ph.D.

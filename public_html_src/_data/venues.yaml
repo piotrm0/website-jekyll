@@ -29,9 +29,17 @@ Entropy:
   long: Entropy
   url: https://www.mdpi.com/journal/entropy
   type: journal
+ICLR:
+  long: International Conference on Learning Representations
+  url: https://iclr.cc/
 ACL:
   long: Annual Meeting of the Association for Computational Linguistics
   org: ACL
+EMNLP:
+  long: Empirical Methods in Natural Language Processing
+  org: ACL
+  type: conference
+  url: https://sigdat.org/
 AAAI:
   long: Conference on Artificial Intelligence
   org: AAAI
@@ -77,7 +85,6 @@ ESOP:
 PETS:
   long: Privacy Enhancing Technologies Symposium
   type: conference
-
 RAI:
   long: Workshop on Responsible AI
   type: workshop
@@ -108,8 +115,33 @@ CSET:
   long: Workshop on Cyber Security Experimentation and Test
   org: USENIX
   type: workshop
-
 NSF:
   long: National Science Foundation Panel
   url: https://www.nsf.org
   type: panel
+ACM-CS:
+  long: Computing Surveys
+  org: ACM
+  url: https://dl.acm.org/journal/csur
+  type: journal
+ACM-TOPS:
+  long: Transactions on Privacy and Security
+  url: https://dl.acm.org/journal/tops
+  org: ACM
+  type: journal
+JCSS:
+  long: Computer and System Sciences
+  url: https://www.sciencedirect.com/journal/journal-of-computer-and-system-sciences
+  type: journal
+LMCS:
+  url: https://lmcs.episciences.org/
+  long: Logical Methods in Computer Science
+  type: journal
+ENTROPY:
+  url: https://www.mdpi.com/journal/entropy
+  long: Entropy
+  type: journal
+TCS:
+  long: Theoretical Computer Science
+  url: https://www.sciencedirect.com/journal/theoretical-computer-science
+  type: journal

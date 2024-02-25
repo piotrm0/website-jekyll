@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: nonav
 ---
 
 <div class="debug container mt-2">
@@ -12,6 +12,7 @@ layout: default
 	    col-lg-4
 	    col-xl-3">
 
+
   <div class="row debug justify-content-center sticky-top" style="top: 60px; z-index: 0;">
 
     <div class="col-8 debug
@@ -20,7 +21,7 @@ layout: default
                 col-lg-12
                 col-xl-12">
 
-      <div class="clipme mb-3"><img class="huh img-fluid" src="images/self_perplexed.jpeg"/></div>
+      <div class="clipme mb-3"><img class="huh img-fluid" src="images/mug_2022.jpeg"/></div>
 
       <img class="rounded img-fluid mb-2" src="images/science.jpeg"
 	   onclick="toggleSummary();"/>
@@ -69,7 +70,8 @@ layout: default
       </div>
     </div>
   </div>
-  </div>
+</div>
+
   <!--/div-->
 
 <div class="debug col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
@@ -78,86 +80,14 @@ layout: default
       <h2 class="d-none d-md-block"><a name="about1">Piotr (Peter) Mardziel</a></h2>
       <h2 class="d-block d-md-none"><a name="about2">About me</a></h2>
       <p>
-	<span id="complex"> I work on transparency and accountability in machine learning with
-          applications to security, privacy, and fairness.
+	<span id="complex"> Independent researcher and software engineer. My research is mostly inactive except for reviewing in choice areas: transparency and accountability in machine learning with applications to security, privacy, and fairness; probabilistic programming and quantitative information flow.
 	</span>
 	<span id="simple"
-	      style="display: none; font-family: 'Comic Sans MS', cursive, sans-serif;"> I work on
-	  making computers explain themselves. I want to make sure computers do not learn sad
-	  things from the sad world or remember things about us we would rather they not. This
-	  makes the world not as sad and computers not as bad. Woof woof.
+	      style="display: none; font-family: 'Comic Sans MS', cursive, sans-serif;"> Woof woof.
 	</span>
 
-        I also dabble in probabilistic programming and quantitative information flow. My interests
-        include:
-
-	<div class="row">
-
-	{%- for cat in site.data.topics -%}
-	<div class="keywords col-12 col-md-12 col-lg-6 col-xl-4">
-	  {%- if cat[1].url -%}
-	  <a href="{{ cat[1].url }}">
-	  {%- endif -%}
-	  {%- if cat[1].logo -%}
-	  <img height="50" src="{{ cat[1].logo }}"/>
-	  {%- endif -%}
-	  {{ cat[0] }}
-	  {%- if cat[1].url -%}</a>{%- endif %}
-	  Topics:
-	  <ul>
-	    {%- for keyword in cat[1].topics -%}
-	    {%- if keyword[1] >= 7 -%}
-            <li><b>{{ keyword[0] }}</b></li>
-            {%- elsif keyword[1] >= 5 -%}
-            <li>{{ keyword[0] }}</li>
-	    {%- endif -%}
-	    {%- endfor -%}
-	  </ul>
-	</div>
-	{%- endfor -%}
-	</div>
-
-      </p>
-
-    </div>
-
-    <!--
-	<li>Accountability in ML</li>
-	<ul>
-	  <li>Privacy and Fairness</li>
-	  <li>Interpretability</li>
-	</ul>
-    <li>Programming Languages</li>
-    <ul>
-      <li>Static Analysis</li>
-      <li>Information Flow</li>
-      <li>Probabilistic Programming</li>
-    </ul>
-    -->
-
-    <!--div class="keywords col">
-      <h3>CMU Keywords</h3>
-      <ul>
-	<li>Computer Systems: Security and Privacy</li>
-	<ul>
-	  <li>Analytics and Machine Learning</li>
-	  <li>Foundations and Formal Methods</li>
-	</ul>
-	<li>Computer Systems: Application Domains</li>
-	<ul>
-	  <li>Machine learning</li>
-	</ul>
-	<li>Signal Processing, Communications and Controls: Data Science</li>
-	<ul>
-	  <li>Machine Learning</li>
-	  <li>Deep Learning</li>
-	</ul>
-	<li>Signal Processing, Communications and Controls: Theoretical Foundations</li>
-	<ul>
-	  <li>Information Theory</li>
-	</ul>
-      </ul>
-    </div-->
+	<br/><br/>
+	<b>NOTE TO EDITORS</b>: I will review articles only in open access journals hosted by non-profit organizations.
 
     {%- for epoch in site.data.projects -%}
     <div class="debug col-12">
@@ -206,8 +136,48 @@ layout: default
         </div>
         -->
 
+
+	<div class="debug col-12">
+	  <a name="eng"><h2>Software Engineering</h2></a>
+
+	I'm presently software engineering mostly on <a href="https://www.trulens.org">trulens</a>, an open-source tool for evaluating generative models.
+
+	</div>
+
+	</p>
+
       <div class="debug col-12">
-	<a name="papers"><h2>Research</h2></a>
+	<a name="research"></a><h2>Research</h2>
+
+	List: <a href="papers.txt">papers.txt</a>; <a href="papers.html">papers.html</a>; <a href="https://scholar.google.com/citations?user=0-wMwpgAAAAJ&hl=en">google scholar</a>; <a href="https://dblp.org/pid/28/10028.html">dblp</a>; <a href="conflicts.txt">conflicts.txt</a>; <a href="bio.txt">bio.txt</a></br><br/>
+
+	<div class="row">
+
+	{%- for cat in site.data.topics -%}
+	<div class="keywords col-12 col-md-12 col-lg-6 col-xl-4">
+	  {%- if cat[1].url -%}
+	  <a href="{{ cat[1].url }}">
+	  {%- endif -%}
+	  {{ cat[0] }}
+	  {%- if cat[1].url -%}</a>{%- endif %}
+	  Topics:
+	  <ul>
+	    {%- for keyword in cat[1].topics -%}
+	    {%- if keyword[1] >= 7 -%}
+            <li><b>{{ keyword[0] }}</b></li>
+            {%- elsif keyword[1] >= 5 -%}
+            <li>{{ keyword[0] }}</li>
+	    {%- endif -%}
+	    {%- endfor -%}
+	  </ul>
+	</div>
+	{%- endfor -%}
+	</div>
+
+      </p>
+
+    </div>
+
 
 {%- for cat_items in site.data.papers['Categories'] -%}
 
@@ -215,7 +185,7 @@ layout: default
 {%- assign cat = cat_items[1] -%}
 
 <h3>{{ cat.longname }}</h3>
-<ul>
+<ul class="debug row">
 
   {%- for papers_items in site.data.papers['Papers'] -%}
 
@@ -227,11 +197,8 @@ layout: default
   {%- assign venue_short = paper.venue -%}
   {%- assign venue = site.data.venues[venue_short] -%}
 
-  <div>
-    <li><a href="{{ paper.pdf }}">{{ paper.title }}</a>.
-    In <i>{{ venue_short }}</i> {{ paper.year }}.
-
-    </div>
+    <li class="debug col-12 col-xl-6 pl-1 pr-5 mb-2"><a href="{{ paper.pdf }}">{{ paper.title }}</a>.
+    In <i>{{ venue_short }}</i> {{ paper.year }}.</li>
 
   {% endif %}
 
