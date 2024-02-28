@@ -9,7 +9,7 @@ layout: blank
 
 {{ cat.longname }}
 
-  {% for papers_items in site.data.papers['Papers'] -%}
+  {% for papers_items in site.data.papers['Papers'] %}
 
   {%- assign ref = papers_items[0] -%}
   {%- assign paper = papers_items[1] -%}
@@ -19,18 +19,16 @@ layout: blank
   {%- assign venue_short = paper.venue -%}
   {%- assign venue = site.data.venues[venue_short] -%}
 
-    {% for author_name in paper.authors -%}
-    {% assign author = site.data.authors[author_name] -%}
+    {%- for author_name in paper.authors -%}
+    {%- assign author = site.data.authors[author_name] -%}
     {{- author_name -}}
-    {% if forloop.last %}{% else %}, {% endif %}
+    {%- if forloop.last -%}{% else %}, {% endif %}
     {%- endfor -%}. {{ paper.title }}. In {% if venue.long -%}
       {{ venue.long }} ({{ venue_short }})
     {%- else -%}
       {{ venue_short }}
     {%- endif -%}. {{ paper.year }}.
 
-  {% endif %}
-
-  {%- endfor -%}
-
-{%- endfor -%}
+  {% endif -%}
+  {%- endfor %}
+{% endfor %}

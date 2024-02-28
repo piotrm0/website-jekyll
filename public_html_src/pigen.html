@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="generating pi">
+  <meta name="author" content="Piotr (Peter) Mardziel">
+  <title>generating pi</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+    />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+	<a href="index.html"> &lt&lt; Piotr (Peter) Mardziel</a>
+
+	<hr/>
+
+	<ul>
+	  <li>Question: <a href="#part1">How many digits of pi does gpt know?</a></li>
+	  <li>Question: <a href="#part2">Does gpt know some pi even if it does not generate it
+	      greedily one token at a time?</a></li>
+	</ul>
+
+	<img class="mx-auto d-block" src="images/robot talking to a pie, comic style.png"/>
+
+	<hr/>
+
+	<h1><a name="part1"></a>How many digits of pi does gpt know?</h1>
+
+	<ul>
+	  <li>GPT and similar models take as input a piece of text and output a prediction of what
+	    comes next. If they are given a the first part of pi, do they predict the next part?
+	    How big of a piece of pi can they produce this way?</li>
+
+	  <li>Given the text "3.14159", the model gpt2-xl, correctly picks the next 793 digits of
+	    pi before making a mistake. gpt1, on the other hand, makes a mistake right away giving
+	    us 0 additional digits. Results for other large language models are shown below
+	    under <a href="#greedypi">greedy pi</a>.</li>
+
+	  <li>Models vary in size. Their pi-generating capability is shown as a function of their
+	    size in <a href="#digitsperparameter">digits per parameter</a> and enumerated in the
+	    table <a href="#stats">stats</a>. gpt2-xl is best with 546.7 digits of pi per G=2^30
+	    parameters.</li>
+
+	  <li>All results are conditioned on models generating digits and not other
+	    characters/words/tokens.</li>
+	</ul>
+
+	<h2><a name="greedypi"></a>greedy pi</h2>
+
+	<img class="img-fluid col-10 mx-auto d-block" src="images/pigen-greedy.png"/>
+
+	<ul>
+	  <li>Lines labeled float{16,32,64,128} indicate number of decimal digits needed to fully
+	    define pi for storage in respective floating point formats.</li>
+	</ul>
+
+	<h3><a name="digitsperparameter"></a>digits per parameter</h3>
+
+	<img class="img-fluid col-10 mx-auto d-block" src="images/pigen-stats.png"/>
+
+	<h3><a name="stats"></a>stats</h3>
+
+<table class="table">
+<tr>
+<th>model</th>
+<th># parameters (G=2^30)</th>
+<th># of greedy π digits beyond the starting 3.14159</th>
+<th>digits per G params</th>
+</tr>
+<tr>
+      <td>bigscience/bloom-560m</td>
+      <td>0.52 G</td>
+      <td>15</td>
+      <td>28.8</td>
+    </tr><tr>
+      <td>bigscience/bloom-1b1</td>
+      <td>0.99 G</td>
+      <td>10</td>
+      <td>10.1</td>
+    </tr><tr>
+      <td>bigscience/bloom-1b7</td>
+      <td>1.60 G</td>
+      <td>47</td>
+      <td>29.3</td>
+    </tr><tr>
+      <td>bigscience/bloom-3b</td>
+      <td>2.80 G</td>
+      <td>85</td>
+      <td>30.4</td>
+    </tr><tr>
+      <td>bigscience/bloom-7b1</td>
+      <td>6.58 G</td>
+      <td>120</td>
+      <td>18.2</td>
+    </tr><tr>
+      <td>openai-gpt</td>
+      <td>0.11 G</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr><tr>
+      <td>distilgpt2</td>
+      <td>0.08 G</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr><tr>
+      <td>gpt2</td>
+      <td>0.12 G</td>
+      <td>14</td>
+      <td>120.8</td>
+    </tr><tr>
+      <td>gpt2-medium</td>
+      <td>0.33 G</td>
+      <td>57</td>
+      <td>172.5</td>
+    </tr><tr>
+      <td>gpt2-large</td>
+      <td>0.72 G</td>
+      <td>123</td>
+      <td>170.6</td>
+    </tr><tr>
+      <td>gpt2-xl</td>
+      <td>1.45 G</td>
+      <td>793</td>
+      <td>546.7</td>
+    </tr><tr>
+      <td>facebook/opt-125m</td>
+      <td>0.12 G</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr><tr>
+      <td>facebook/opt-350m</td>
+      <td>0.31 G</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr><tr>
+      <td>facebook/opt-1.3b</td>
+      <td>1.23 G</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr><tr>
+      <td>facebook/opt-2.7b</td>
+      <td>2.47 G</td>
+      <td>3</td>
+      <td>1.2</td>
+    </tr><tr>
+      <td>facebook/opt-6.7b</td>
+      <td>6.20 G</td>
+      <td>8</td>
+      <td>1.3</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-70m</td>
+      <td>0.07 G</td>
+      <td>1</td>
+      <td>15.2</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-160m</td>
+      <td>0.15 G</td>
+      <td>25</td>
+      <td>165.4</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-410m</td>
+      <td>0.38 G</td>
+      <td>5</td>
+      <td>13.2</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-1b</td>
+      <td>0.94 G</td>
+      <td>104</td>
+      <td>110.4</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-1.4b</td>
+      <td>1.32 G</td>
+      <td>26</td>
+      <td>19.7</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-2.8b</td>
+      <td>2.58 G</td>
+      <td>137</td>
+      <td>53.0</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-6.9b</td>
+      <td>6.39 G</td>
+      <td>10</td>
+      <td>1.6</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-70m-deduped</td>
+      <td>0.07 G</td>
+      <td>18</td>
+      <td>274.4</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-160m-deduped</td>
+      <td>0.15 G</td>
+      <td>2</td>
+      <td>13.2</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-410m-deduped</td>
+      <td>0.38 G</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-1b-deduped</td>
+      <td>0.94 G</td>
+      <td>2</td>
+      <td>2.1</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-1.4b-deduped</td>
+      <td>1.32 G</td>
+      <td>95</td>
+      <td>72.1</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-2.8b-deduped</td>
+      <td>2.58 G</td>
+      <td>87</td>
+      <td>33.7</td>
+    </tr><tr>
+      <td>EleutherAI/pythia-6.9b-deduped</td>
+      <td>6.39 G</td>
+      <td>641</td>
+      <td>100.4</td>
+    </tr><tr>
+      <td>xlnet-base-cased</td>
+      <td>0.11 G</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+</table>
+
+	<hr/>
+
+	<h1><a name="part2"></a>Does gpt know some pi even if it does not generate it greedily one
+	  token at a time?</h1>
+
+	<ul>
+	  <li>Yes. Let us look at pi generating probability instead of greedy pi length.</li>
+
+	  <li>If each model predicted digits according to their distributions instead of picking
+	    the most probable digits, what would be the probability of generating at least n digits
+	    of pi? This is shown in section <a href="#piprobability">pi probability</a>.</li>
+
+	  <li>All models have some notion of pi until a point where pi probability degenerates at a
+	    fixed exponential (a straight diagonal line in the graphs).</li>
+
+	  <li>The point at which a model becomes as good as random at generating pi is "amnesia"
+	    in <a href="#amnesia">point of no more pi</a> below.</li>
+	</ul>
+
+	<h2><a name="piprobability"></a>pi probability</h2>
+
+	<h3>all</h3>
+	<img class="img-fluid mx-auto d-block" src="images/pigen-all.png"/>
+
+	<h3>gpt</h3>
+	<img class="img-fluid mx-auto d-block" src="images/pigen-gpt.png"/>
+
+	<h3>bloom</h3>
+	<img class="img-fluid mx-auto d-block" src="images/pigen-bloom.png"/>
+
+	<h3>opt</h3>
+	<img class="img-fluid mx-auto d-block" src="images/pigen-opt.png"/>
+
+	<h3>pythia</h3>
+	<img class="img-fluid mx-auto d-block" src="images/pigen-pythia.png"/>
+
+	<h2><a name="amnesia"></a>point of no more pi</h2>
+	<img class="img-fluid max-auto d-block" src="images/pigen-amnesia.png"/>
+
+<table class="table">
+<tr>
+<th>model</th>
+<th># parameters (G=2^30)</th>
+<th># of π digits before amnesia</th>
+<th>pre-amnesia digits per G params</th>
+</tr>
+<tr>
+        <td>bigscience/bloom-560m</td>
+        <td>0.52 G</td>
+        <td>48</td>
+        <td>92.2</td>
+      </tr><tr>
+        <td>bigscience/bloom-1b1</td>
+        <td>0.99 G</td>
+        <td>48</td>
+        <td>48.4</td>
+      </tr><tr>
+        <td>bigscience/bloom-1b7</td>
+        <td>1.60 G</td>
+        <td>80</td>
+        <td>49.9</td>
+      </tr><tr>
+        <td>bigscience/bloom-3b</td>
+        <td>2.80 G</td>
+        <td>100</td>
+        <td>35.8</td>
+      </tr><tr>
+        <td>bigscience/bloom-7b1</td>
+        <td>6.58 G</td>
+        <td>172</td>
+        <td>26.1</td>
+      </tr><tr>
+        <td>openai-gpt</td>
+        <td>0.11 G</td>
+        <td>0</td>
+        <td>0.0</td>
+      </tr><tr>
+        <td>distilgpt2</td>
+        <td>0.08 G</td>
+        <td>1</td>
+        <td>13.1</td>
+      </tr><tr>
+        <td>gpt2</td>
+        <td>0.12 G</td>
+        <td>23</td>
+        <td>198.5</td>
+      </tr><tr>
+        <td>gpt2-medium</td>
+        <td>0.33 G</td>
+        <td>144</td>
+        <td>435.8</td>
+      </tr><tr>
+        <td>gpt2-large</td>
+        <td>0.72 G</td>
+        <td>328</td>
+        <td>455.0</td>
+      </tr><tr>
+        <td>gpt2-xl</td>
+        <td>1.45 G</td>
+        <td>1016</td>
+        <td>700.4</td>
+      </tr><tr>
+        <td>facebook/opt-125m</td>
+        <td>0.12 G</td>
+        <td>1</td>
+        <td>8.6</td>
+      </tr><tr>
+        <td>facebook/opt-350m</td>
+        <td>0.31 G</td>
+        <td>1</td>
+        <td>3.2</td>
+      </tr><tr>
+        <td>facebook/opt-1.3b</td>
+        <td>1.23 G</td>
+        <td>22</td>
+        <td>18.0</td>
+      </tr><tr>
+        <td>facebook/opt-2.7b</td>
+        <td>2.47 G</td>
+        <td>24</td>
+        <td>9.7</td>
+      </tr><tr>
+        <td>facebook/opt-6.7b</td>
+        <td>6.20 G</td>
+        <td>48</td>
+        <td>7.7</td>
+      </tr><tr>
+        <td>EleutherAI/pythia-70m</td>
+        <td>0.07 G</td>
+        <td>28</td>
+        <td>426.9</td>
+      </tr><tr>
+        <td>EleutherAI/pythia-160m</td>
+        <td>0.15 G</td>
+        <td>50</td>
+        <td>330.7</td>
+      </tr><tr>
+        <td>EleutherAI/pythia-410m</td>
+        <td>0.38 G</td>
+        <td>101</td>
+        <td>267.6</td>
+      </tr><tr>
+        <td>EleutherAI/pythia-1b</td>
+        <td>0.94 G</td>
+        <td>222</td>
+        <td>235.6</td>
+      </tr><tr>
+        <td>EleutherAI/pythia-1.4b</td>
+        <td>1.32 G</td>
+        <td>315</td>
+        <td>239.1</td>
+      </tr><tr>
+        <td>EleutherAI/pythia-2.8b</td>
+        <td>2.58 G</td>
+        <td>994</td>
+        <td>384.6</td>
+      </tr><tr>
+          <td>EleutherAI/pythia-6.9b</td>
+          <td>6.39 G</td>
+          <td>&gt; 1591</td>
+          <td>&gt; 249.1</td>
+        </tr><tr>
+        <td>EleutherAI/pythia-70m-deduped</td>
+        <td>0.07 G</td>
+        <td>32</td>
+        <td>487.9</td>
+      </tr><tr>
+        <td>EleutherAI/pythia-160m-deduped</td>
+        <td>0.15 G</td>
+        <td>48</td>
+        <td>317.5</td>
+      </tr><tr>
+        <td>EleutherAI/pythia-410m-deduped</td>
+        <td>0.38 G</td>
+        <td>85</td>
+        <td>225.2</td>
+      </tr><tr>
+        <td>EleutherAI/pythia-1b-deduped</td>
+        <td>0.94 G</td>
+        <td>164</td>
+        <td>174.0</td>
+      </tr><tr>
+        <td>EleutherAI/pythia-1.4b-deduped</td>
+        <td>1.32 G</td>
+        <td>315</td>
+        <td>239.1</td>
+      </tr><tr>
+        <td>EleutherAI/pythia-2.8b-deduped</td>
+        <td>2.58 G</td>
+        <td>371</td>
+        <td>143.5</td>
+      </tr><tr>
+        <td>EleutherAI/pythia-6.9b-deduped</td>
+        <td>6.39 G</td>
+        <td>1096</td>
+        <td>171.6</td>
+      </tr><tr>
+        <td>xlnet-base-cased</td>
+        <td>0.11 G</td>
+        <td>0</td>
+        <td>0.0</td>
+      </tr>
+</table>
+
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
