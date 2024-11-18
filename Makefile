@@ -2,6 +2,9 @@ serve:
 	open public_html/index.html; true
 	cd public_html_src; make serve
 
+install:
+	cd public_html_src; bundle install
+
 public_html: public_html_src
 	cd public_html_src; make build
 

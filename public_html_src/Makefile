@@ -5,3 +5,6 @@ serve:
 
 build:
 	bundle exec jekyll build $(COMMON)
+
+install:
+	bundle install
