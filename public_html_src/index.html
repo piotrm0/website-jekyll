@@ -48,8 +48,8 @@ layout: nonav
       </div>
 
       <div class="debug col-6 col-sm-12 col-md-6">
-	<a href="https://wwww.realmlabs.ai">
-	  <img alt="Truera" class="col-12 p-3" src="images/realmlabs_logo.png"/>
+	<a href="https://www.realmlabs.ai">
+	  <img alt="RealmLabs" class="col-12 p-3" src="images/realmlabs_logo.png"/>
 	  <br/>
 	</a>
 
@@ -76,10 +76,7 @@ layout: nonav
       <h2 class="d-none d-md-block"><a name="about1">Piotr (Peter) Mardziel</a></h2>
       <h2 class="d-block d-md-none"><a name="about2">About me</a></h2>
       <span id="complex">
-	Independent researcher and software engineer. My research is mostly inactive except for
-	reviewing in choice areas: transparency and accountability in machine learning with
-	applications to security, privacy, and fairness; probabilistic programming and quantitative
-	information flow.
+	I do security in AI at <a href="https://realmlabs.ai">realmlabs</a>.
       </span>
       <span id="simple" style="display: none; font-family: 'Comic Sans MS', cursive, sans-serif;">
 	Woof woof.
@@ -87,24 +84,25 @@ layout: nonav
 
       <br/><br/>
 
-      <b>NOTE TO EDITORS</b>: I will review articles only in open access journals hosted by non-profit organizations.
+      <b>NOTE TO EDITORS</b>: I review articles only in open access journals hosted by
+      non-profit organizations.
 
       <br/><br/>
     </div>
 
     <div class="debug col-12">
-      <h2>Unsorted Works</h2>
+      <h2>Unsorted</h2>
       <ul>
-	<li>Technical Exploration: <a href="pigen.html">How much pi does gpt know?</a></li>
-	<li>Technical Blog
-	Article: <a href="https://towardsdatascience.com/drift-metrics-how-to-select-the-right-metric-to-analyze-drift-24da63e497e">Drift
+	<li><a href="pigen.html">How much pi does gpt know?</a></li>
+	<li><a href="https://towardsdatascience.com/drift-metrics-how-to-select-the-right-metric-to-analyze-drift-24da63e497e">Drift
 	Metrics: How to Select the Right Metric to Analyze Drift</a></li>
-	<li>Technical Blog
-	Article: <a href="https://towardsdatascience.com/drift-in-machine-learning-e49df46803a">Drift
+	<li><a href="https://towardsdatascience.com/drift-in-machine-learning-e49df46803a">Drift
 	in Machine Learning: Why it's hard and what to do about it</a></li>
-	<li>Software: <a href="https://trulens.org">trulens</a>. A python library for explaining
+	<li><a href="https://trulens.org">trulens</a>: python library for explaining
 	deep models (trulens_explain) and evaluating large language model applications
-	(trulens_eval).
+	  (trulens_eval).
+	<li><a href="https://pypi.org/project/exprlens/">pyexprlens</a>: lenses from expressions in
+	python.</li>
       </ul>
     </div>
 
@@ -117,8 +115,8 @@ layout: nonav
 	{% assign project = project_dict[1] %}
 	<li class="debug col-6 col-xl-6 pr-5 pl-1 mb-2">
 	  {% if project.link_url %}
-	  <a href="{{ project.link_url }}">{% if project.link_name %}{{ project.link_name }}{% else %}{{ project_name }}{% endif %}</a>
-	  {% else %}
+	  <a href="{{ project.link_url }}">{% if project.link_name %}{{ project.link_name }}{% else
+	  %}{{ project_name }}{% endif %}</a> {% else %}
 	    <span>{{ project_name }}</span>
 	  {% endif %}
 	    {% if project.collabs %}
@@ -147,51 +145,21 @@ layout: nonav
     </div>
     {%- endfor -%}
 
-    <div class="debug col-12">
-      <a name="eng"><h2>Software Engineering</h2></a>
-
-      I'm presently software engineering mostly on <a href="https://www.trulens.org">trulens</a>,
-      an open-source tool for evaluating generative models.
-    </div>
-
       <p></p>
 
       <div class="debug col-12">
 	<a name="research"></a><h2>Research</h2>
-
-	<a href="papers.txt">papers.txt</a>;
-	<a href="papers.html">papers.html</a>;
+	topics.{<a href="topics.html">html</a>,<a href="topics.txt">txt</a>};
+	papers.{<a href="papers.html">html</a>,<a href="papers.txt">txt</a>};
+	service.{<a href="service.html">html</a>,<a href="service.txt">txt</a>};
 	<a href="https://scholar.google.com/citations?user=0-wMwpgAAAAJ&hl=en">google scholar</a>;
 	<a href="https://dblp.org/pid/28/10028.html">dblp</a>;
 	<a href="conflicts.txt">conflicts.txt</a>;
-	<a href="bio.txt">bio.txt</a><br/><br/>
+	<a href="bio.txt">bio.txt</a>
 
-	<div class="row">
+	<br/><br/>
 
-	{%- for cat in site.data.topics -%}
-	<div class="keywords col-12 col-md-12 col-lg-6 col-xl-4">
-	  {%- if cat[1].url -%}
-	  <a href="{{ cat[1].url }}">
-	  {%- endif -%}
-	  {{ cat[0] }}
-	  {%- if cat[1].url -%}</a>{%- endif %}
-	  Topics:
-	  <ul>
-	    {%- for keyword in cat[1].topics -%}
-	    {%- if keyword[1] >= 7 -%}
-            <li><b>{{ keyword[0] }}</b></li>
-            {%- elsif keyword[1] >= 5 -%}
-            <li>{{ keyword[0] }}</li>
-	    {%- endif -%}
-	    {%- endfor -%}
-	  </ul>
-	</div>
-	{%- endfor -%}
-	</div>
-
-      </p>
-
-    </div>
+      <p></p>
 
 {%- for cat_items in site.data.papers['Categories'] -%}
 
@@ -211,9 +179,14 @@ layout: nonav
   {%- assign venue_short = paper.venue -%}
   {%- assign venue = site.data.venues[venue_short] -%}
 
-  <li class="debug col-12 col-xl-6 pl-1 pr-5 mb-2">
-    <a href="{{ paper.pdf }}">{{ paper.title }}</a>.
-    In <i>{{ venue_short }}</i> {{ paper.year }}.
+  <li class="debug col-12 col-xl-12 pl-1 pr-5 mb-2">
+    {{ paper.year }} <i>{{ venue_short }}</i>
+    {% if paper.pdf -%}<a href="{{ paper.pdf }}">
+      {%- else if paper.html -%}<a href="{{ paper.html }}">
+	{%- endif -%} {{ paper.title }}
+	{%- if paper.pdf %}</a>
+        {%- else if paper.html %}</a>
+        {%- endif -%}.
   </li>
 
   {% endif %}
@@ -222,44 +195,6 @@ layout: nonav
 
   </ul>
 {%- endfor -%} <!-- end of category loop -->
-
-<div class="debug col-12">
-  <a name="service"></a>
-  <h2>Research Community Service</h2>
-  <div class="debug row">
-
-    {%- for dict in site.data.service -%}
-    {%- assign type = dict[0] -%}
-    {%- assign items = dict[1] -%}
-
-    <div class="debug col-12">
-      <h3>{{ type }}</h3>
-      <ul class="debug row">
-	{%- for item_dict in items -%}
-	{%- assign short = item_dict[0] -%}
-	{%- assign item = item_dict[1] -%}
-	{%- assign venue = site.data.venues[short] -%}
-	<li class="debug col-12 col-xl-6 pl-1 pr-5 mb-2">
-	  {{ venue.org }}
-
-	  {% if item.url -%}
-	  <a href="{{ item.url }}">{{ venue.long }}</a>
-	  {%- else -%}
-	  <a href="{{ venue.url }}">{{ venue.long }}</a>
-	  {%- endif %}
-
-	  ({{ short }})
-
-          <small>{{ item.years }}</small>
-
-	</li>
-	{%- endfor -%}
-      </ul>
-    </div>
-    {%- endfor -%}
-
-  </div>
-</div>
 
     </div>
   </div>

@@ -145,3 +145,11 @@ TCS:
   long: Theoretical Computer Science
   url: https://www.sciencedirect.com/journal/theoretical-computer-science
   type: journal
+USENIX:
+  long: USENIX Security Symposium
+  url: https://www.usenix.org/conferences
+  type: conference
+ICML:
+  long: Conference on Machine Learning
+  url: https://icml.cc/
+  type: conference

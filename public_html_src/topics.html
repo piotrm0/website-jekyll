@@ -1,0 +1,28 @@
+---
+layout: blank
+---
+
+<div class="row">
+
+	{%- for cat in site.data.topics -%}
+	<div class="keywords col-12 col-md-12 col-lg-6 col-xl-4">
+	  {%- if cat[1].url -%}
+	  <a href="{{ cat[1].url }}">
+	  {%- endif -%}
+	  {{ cat[0] }}
+	  {%- if cat[1].url -%}</a>{%- endif %}
+	  Topics:
+	  <ul>
+	    {%- for keyword in cat[1].topics -%}
+	    {%- if keyword[1] >= 7 -%}
+            <li><b>{{ keyword[0] }}</b></li>
+            {%- elsif keyword[1] >= 5 -%}
+            <li>{{ keyword[0] }}</li>
+	    {%- endif -%}
+	    {%- endfor -%}
+	  </ul>
+	</div>
+	{%- endfor -%}
+	</div>
+
+</div>

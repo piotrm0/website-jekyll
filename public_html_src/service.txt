@@ -1,0 +1,19 @@
+---
+layout: blank
+---
+
+# Research Community Service
+
+{% for dict in site.data.service %}
+{%- assign type = dict[0] -%}
+{%- assign items = dict[1] -%}
+## {{ type }}
+
+{% for item_dict in items %}
+{%- assign short = item_dict[0] -%}
+{%- assign item = item_dict[1] -%}
+{%- assign venue = site.data.venues[short] -%}
+- {{ venue.org }} {{ venue.long }} ({{ short }}) {{ item.years }}
+
+{% endfor -%}
+{%- endfor -%}

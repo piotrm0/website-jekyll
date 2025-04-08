@@ -1,11 +1,11 @@
 Committees/Reviewer:
   AAAI:
     url: https://aaai.org/Conferences/AAAI-21/
-    years: 2021-2023
+    years: 2021-2025
 
   ACL:
     url: https://2021.aclweb.org/
-    years: 2021, 2023, 2024
+    years: 2021, 2023-2025
 
   ACM-CS:
     years: ~2017, ~2023-2024
@@ -27,7 +27,7 @@ Committees/Reviewer:
 
   CSF:
     url: https://www.ieee-security.org/CSFWweb
-    years: 2013-2018, 2020, 2024,
+    years: 2013-2018, 2020, 2024, 2025
 
   DAT:
     url: http://datworkshop.org
@@ -35,7 +35,7 @@ Committees/Reviewer:
 
   EMNLP:
     url: https://sigdat.org/
-    years: 2023
+    years: 2023, 2024
 
   Entropy:
     years: ~2019
@@ -60,6 +60,10 @@ Committees/Reviewer:
     url: https://iclr.cc/
     years: 2024
 
+  ICML:
+    url: https://icml.cc/
+    years: 2025
+
   IJA:
     years: ~2017
 
@@ -79,7 +83,7 @@ Committees/Reviewer:
 
   NeurIPS:
     url: https://neurips.cc/
-    years: 2023
+    years: 2023-2025
 
   PETS:
     url: https://www.petsymposium.org/2021/
@@ -108,10 +112,13 @@ Committees/Reviewer:
   TCS:
     years: ~2017
 
+  USENIX:
+    url: https://www.usenix.org/conferences
+    years: 2025
+
   WPES:
     url: https://wpes.tech
     years: 2018, 2020
-
 
 Other service:
   NSF:
