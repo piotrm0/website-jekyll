@@ -7,6 +7,10 @@ Committees/Reviewer:
     url: https://2021.aclweb.org/
     years: 2021, 2023-2025
 
+  ACL Industry Track:
+    url: https://2021.aclweb.org
+    years: 2025
+
   ACM-CS:
     years: ~2017, ~2023-2024
 
@@ -85,6 +89,10 @@ Committees/Reviewer:
     url: https://neurips.cc/
     years: 2023-2025
 
+  NeurIPS Datasets and Benchmarks Track:
+    url: https://neurips.cc/
+    years: 2025
+
   PETS:
     url: https://www.petsymposium.org/2021/
     years: 2021
@@ -113,6 +121,10 @@ Committees/Reviewer:
     years: ~2017
 
   USENIX:
+    url: https://www.usenix.org/conferences
+    years: 2025
+
+  USENIX Paper Awards Committee:
     url: https://www.usenix.org/conferences
     years: 2025
 
