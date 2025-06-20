@@ -93,9 +93,13 @@ Committees/Reviewer:
     url: https://neurips.cc/
     years: 2025
 
+  NeurIPS Ethics Reviewer:
+    url: https://neurips.cc/
+    years: 2025
+
   PETS:
     url: https://www.petsymposium.org/2021/
-    years: 2021
+    years: 2021, 2022, 2023, 2025
 
   PLAS:
     url: https://plas2018.dcc.ufmg.br
